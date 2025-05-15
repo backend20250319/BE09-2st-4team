@@ -13,7 +13,7 @@ export default function BannerSlider() {
     {
       id: "promo",
       //title: "우석이 디지털 굿즈 2차 지금 다운로드",
-      image: "./images/popup1.png",
+      image: "/images/popup1.png",
     },
     {
       id: "flavor",
@@ -44,45 +44,47 @@ export default function BannerSlider() {
   // const buttonDelay = `${popups.length * 0.1 + 0.1}s`;
 
   return (
-    <div className="slider-container">
-      <img
-        src="./images/main_banner.png"
-        alt="메인배너"
-        className="banner-img"
-      />
+    <div className="frame-container">
+      <div className="slider-container">
+        <img
+          src="/images/main_banner.png"
+          alt="메인배너"
+          className="banner-img"
+        />
 
-      <div className="popup-outer-container">
-        <div className="popup-container">
-          {popups.map((popup, index) => (
-            <div
-              className={`popup-card ${visible ? "visible" : "hidden"}`}
-              key={popup.id}
+        <div className="popup-outer-container">
+          <div className="popup-container">
+            {popups.map((popup, index) => (
+              <div
+                className={`popup-card ${visible ? "visible" : "hidden"}`}
+                key={popup.id}
+                style={{
+                  // transitionDelay: `${index * 0.2}s`,
+                  transitionDelay: visible
+                    ? `${index * 0.2}s` // 표시될 때는 위에서부터(첫 번째부터)
+                    : `${index * 0.2}s`, // 사라질 때도 위에서부터(첫 번째부터)
+                }}
+              >
+                <div className="popup-image-container">
+                  <img src={popup.image} alt={popup.id} />
+                </div>
+              </div>
+            ))}
+
+            {/*  */}
+            <button
+              className={`popup-toggle ${visible ? "visible" : "hidden"}`}
+              onClick={togglePopup}
               style={{
-                // transitionDelay: `${index * 0.2}s`,
+                // transitionDelay: `${popups.length * 0.1}s`,
                 transitionDelay: visible
-                  ? `${index * 0.2}s` // 표시될 때는 위에서부터(첫 번째부터)
-                  : `${index * 0.2}s`, // 사라질 때도 위에서부터(첫 번째부터)
+                  ? `${popups.length * 0.2 + 0.2}s` // 마지막 팝업 이후 나타남
+                  : `${popups.length * 0.2 + 0.2}s`, // 마지막 팝업 이후 사라짐
               }}
             >
-              <div className="popup-image-container">
-                <img src={popup.image} alt={popup.id} />
-              </div>
-            </div>
-          ))}
-
-          {/*  */}
-          <button
-            className={`popup-toggle ${visible ? "visible" : "hidden"}`}
-            onClick={togglePopup}
-            style={{
-              // transitionDelay: `${popups.length * 0.1}s`,
-              ransitionDelay: visible
-                ? `${popups.length * 0.2 + 0.2}s` // 마지막 팝업 이후 나타남
-                : `${popups.length * 0.2 + 0.2}s`, // 마지막 팝업 이후 사라짐
-            }}
-          >
-            {visible ? "x" : "+"}
-          </button>
+              {visible ? "x" : "+"}
+            </button>
+          </div>
         </div>
       </div>
     </div>
