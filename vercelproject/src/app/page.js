@@ -1,12 +1,9 @@
-import React from "react";
-import Footer from "./../components/Footer.jsx";
-
-export default function App() {
+export default function Home() {
   return (
-    <div className="app-wrapper">
-      <meta name="viewport" content="width=1280, user-scalable=no" />
-      <main style={{ minHeight: "60vh", background: "#fff" }} />
-      <Footer />
+    <div>
+      <h1 style={{ textAlign: "center", padding: "40px 0" }}>
+        배스킨라빈스에 오신 것을 환영합니다!
+      </h1>
     </div>
   );
 }

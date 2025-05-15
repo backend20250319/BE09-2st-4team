@@ -152,24 +152,28 @@ export default function Header() {
           <div className="submenu-bar__container column">
             <div className="submenu-column">
               <h4 className="submenu-title">이벤트</h4>
-              <Link href="#" className="submenu__item sub">
-                프로모션
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                제휴혜택
-              </Link>
+              <div className="submenu-items">
+                <Link href="#" className="submenu__item sub">
+                  프로모션
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  제휴혜택
+                </Link>
+              </div>
             </div>
             <div className="submenu-column">
               <h4 className="submenu-title">BR Play</h4>
-              <Link href="#" className="submenu__item sub">
-                배라광장
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                BR레시피
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                마이플레이버리스트
-              </Link>
+              <div className="submenu-items">
+                <Link href="#" className="submenu__item sub">
+                  배라광장
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  BR레시피
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  마이플레이버리스트
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -203,27 +207,31 @@ export default function Header() {
           <div className="submenu-bar__container column">
             <div className="submenu-column">
               <h4 className="submenu-title">Store</h4>
-              <Link href="#" className="submenu__item sub">
-                매장 찾기
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                100flavor 플래그십스토어
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                워크샵 by 배스킨라빈스
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                점포개설문의
-              </Link>
+              <div className="submenu-items">
+                <Link href="#" className="submenu__item sub">
+                  매장 찾기
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  100flavor 플래그십스토어
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  워크샵 by 배스킨라빈스
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  점포개설문의
+                </Link>
+              </div>
             </div>
             <div className="submenu-column">
               <h4 className="submenu-title">Delivery</h4>
-              <Link href="#" className="submenu__item sub">
-                배달주문
-              </Link>
-              <Link href="#" className="submenu__item sub">
-                단체주문
-              </Link>
+              <div className="submenu-items">
+                <Link href="#" className="submenu__item sub">
+                  배달주문
+                </Link>
+                <Link href="#" className="submenu__item sub">
+                  단체주문
+                </Link>
+              </div>
             </div>
           </div>
         </div>
