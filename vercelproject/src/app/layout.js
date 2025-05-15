@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/header.css";
 
 import Header from "../components/Header";
