@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "@/styles/flavorpage.css";
 import React from "react";
 import Footer from "./../components/Footer.jsx";
 import BeBetterPage from "../components/BeBetterPage.jsx";

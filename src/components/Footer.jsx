@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import "./../styles/footer.css";
-// import FlavorPage from "./FlavorPage";
 
 export default function Footer() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -71,7 +70,7 @@ export default function Footer() {
         <div className="br-footer-main">
           <div className="br-footer-logo-col">
             <img
-              src="./images/Footer/h_logo_2.png"
+              src="/images/footer/h_logo_2.png"
               alt="BR Logo"
               className="br-footer-logo"
             />
@@ -143,20 +142,20 @@ export default function Footer() {
         <div className="br-footer-bottom">
           <div className="br-footer-certifications">
             <a href="https://www.happypointcard.com/page/main/index.spc">
-              <img src="./images/Footer/btn_happy_point.png" alt="해피포인트" />
+              <img src="/images/Footer/btn_happy_point.png" alt="해피포인트" />
             </a>
             <a href="https://market-web.happypointcard.com/">
-              <img src="./images/Footer/btn_happy_market.png" alt="해피마켓" />
+              <img src="/images/Footer/btn_happy_market.png" alt="해피마켓" />
             </a>
             <a href="https://www.spc.co.kr/share/spc-foundation/introduction/">
-              <img src="./images/Footer/btn_spc_story.png" alt="SPC" />
+              <img src="/images/Footer/btn_spc_story.png" alt="SPC" />
             </a>
             <div className="br-footer-small-icon">
               <a href="https://knqa.ksa.or.kr/knqa/2276/subview.do">
-                <img src="./images/Footer/btn_ksa.png" alt="KSA" />
+                <img src="/images/Footer/btn_ksa.png" alt="KSA" />
               </a>
               <a href="https://www.kca.go.kr/ccm/">
-                <img src="./images/Footer/btn_ccm2.png" alt="CCM" />
+                <img src="/images/Footer/btn_ccm2.png" alt="CCM" />
               </a>
             </div>
           </div>
@@ -164,16 +163,16 @@ export default function Footer() {
           <div className="br-footer-sns-and-site">
             <div className="br-footer-icons">
               <a href="https://www.instagram.com/baskinrobbinskorea/">
-                <img src="./images/Footer/btn_instagram.png" alt="Instagram" />
+                <img src="/images/Footer/btn_instagram.png" alt="Instagram" />
               </a>
               <a href="https://www.youtube.com/channel/UCdUlCaxi7gx9Q-WDVDe30YA">
-                <img src="./images/Footer/btn_youtube.png" alt="YouTube" />
+                <img src="/images/Footer/btn_youtube.png" alt="YouTube" />
               </a>
               <a href="https://www.facebook.com/baskinrobbinskr/?locale=ko_KR">
-                <img src="./images/Footer/btn_facebook.png" alt="Facebook" />
+                <img src="/images/Footer/btn_facebook.png" alt="Facebook" />
               </a>
               <a href="https://www.brmagazine.co.kr/">
-                <img src="./images/Footer/btn_magazine.png" alt="BR" />
+                <img src="/images/Footer/btn_magazine.png" alt="BR" />
               </a>
             </div>
 
