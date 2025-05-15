@@ -1,9 +1,5 @@
 import FlavorPage from "@/components/FlavorPage";
 
 export default function flavorpage() {
-  return (
-    <>
-      <FlavorPage />
-    </>
-  );
+  return <h2>으아</h2>;
 }
