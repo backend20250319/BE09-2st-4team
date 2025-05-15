@@ -9,7 +9,7 @@ const flavorHistoryData = [
     id: 1,
     year: 2025,
     month: 1,
-    name: "춘식이의 고구마맘!",
+    name: "춘식이의 고구마맘!!",
     bgColor: "#EADCBE",
     img: "/images/flavors/2025-01.png",
   },
