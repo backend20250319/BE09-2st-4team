@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 // import "../styles/main.css";
 
 export default function BannerSlider() {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
+  const [initialLoad, setInitialLoad] = useState(true);
 
   // 팝업 데이터
   const popups = [
@@ -26,6 +27,15 @@ export default function BannerSlider() {
     },
   ];
 
+  useEffect(() => {
+    // setVisible(false);
+
+    setTimeout(() => {
+      setVisible(true);
+      setInitialLoad(false);
+    }, 700);
+  }, []);
+
   const togglePopup = () => {
     setVisible(!visible);
   };
@@ -41,16 +51,17 @@ export default function BannerSlider() {
         className="banner-img"
       />
 
-      <div className={`popup-outer-container ${visible ? "" : "hidden"}`}>
+      <div className="popup-outer-container">
         <div className="popup-container">
           {popups.map((popup, index) => (
             <div
-              className="popup-card"
+              className={`popup-card ${visible ? "visible" : "hidden"}`}
               key={popup.id}
               style={{
+                // transitionDelay: `${index * 0.2}s`,
                 transitionDelay: visible
-                  ? `${index * 0.1}s` // 표시될 때는 위에서부터(첫 번째부터)
-                  : `${index * 0.1}s`, // 사라질 때도 위에서부터(첫 번째부터)
+                  ? `${index * 0.2}s` // 표시될 때는 위에서부터(첫 번째부터)
+                  : `${index * 0.2}s`, // 사라질 때도 위에서부터(첫 번째부터)
               }}
             >
               <div className="popup-image-container">
@@ -59,15 +70,18 @@ export default function BannerSlider() {
             </div>
           ))}
 
-          {/* 버튼도 부모 컨테이너인 popup-container의 상태에 따라 함께 이동 */}
+          {/*  */}
           <button
-            className="popup-toggle"
+            className={`popup-toggle ${visible ? "visible" : "hidden"}`}
             onClick={togglePopup}
             style={{
-              transitionDelay: `${popups.length * 0.1}s`,
+              // transitionDelay: `${popups.length * 0.1}s`,
+              ransitionDelay: visible
+                ? `${popups.length * 0.2 + 0.2}s` // 마지막 팝업 이후 나타남
+                : `${popups.length * 0.2 + 0.2}s`, // 마지막 팝업 이후 사라짐
             }}
           >
-            {visible ? "X" : "+"}
+            {visible ? "x" : "+"}
           </button>
         </div>
       </div>

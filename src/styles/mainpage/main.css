@@ -27,17 +27,18 @@
   right: 20px;
   top: 10%;
   z-index: 10;
-  transition: transform 0.5s ease;
+  /* transition: transform 0.5s ease; */
 }
 
-.popup-outer-container.hidden {
+/* .popup-outer-container.hidden {
   transform: translateX(200%);
-}
+} */
 
 .popup-container {
   /* position: absolute; 부모 요소 기준으로 배치 */
   /* right: 20px;
   top: 10%; */
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 8px; /* gap : 행과 열 사이의 간격 설정 */
@@ -58,21 +59,31 @@
   width: 180px;
   overflow: visible;
   box-sizing: border-box;
-  transition: opacity 0.5s ease;
+  transition: transform 1s ease;
 }
 
 /* .popup-container.popup-hidden {
   transform: translateX(110%);
 } */
 
+.popup-card.visible {
+  transform: translateX(0);
+}
+
+.popup-card.hidden {
+  transform: translateX(200%);
+}
+
 .popup-toggle {
-  /* position: relative;
-  align-self: flex-start; */
+  /* position: absolute; */
+  position: relative;
+  align-self: flex-start;
   margin-top: 8px;
   /* bottom: -30px;
   left: 0; */
-  /* bottom: 20px;
-  right: 20px; */
+  /* bottom: 20px;*/
+  right: 20px;
+  /* top: calc(10% + (180px + 8px) * 3); 마지막 팝업 위치 계산 */
   width: 25px;
   height: 25px;
   background-color: white;
@@ -85,7 +96,25 @@
   align-items: center;
   justify-content: center;
   z-index: 15;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: transform 1s ease-out, opacity 0.5s ease;
+}
+
+.popup-toggle.visible {
+  transform: rotate(0deg) translateX(0);
+  /* transform: translateX(0);
+  opacity: 1; */
+  /* bottom: 0;
+  left: 0; */
+}
+
+.popup-toggle.hidden {
+  transform: rotate(180deg) translateX(0);
+  /* transform: translate(150px, 300px); */
+  /* transform: translateX(200px);
+  left: 0;
+  bottom: 0; */
+  /* bottom: 0;
+  right: 0; */
 }
 
 .popup-image-container {
