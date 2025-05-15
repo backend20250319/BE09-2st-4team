@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import "./../styles/Footer.css";
+import Link from "next/link";
+import "./../styles/footer.css";
+// import FlavorPage from "./FlavorPage";
 
 export default function Footer() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -110,7 +112,9 @@ export default function Footer() {
             <div>
               <div className="br-footer-link-title">BR Story</div>
               <div className="br-footer-link-item">브랜드 스토리</div>
-              <div className="br-footer-link-item">이달의 맛 히스토리</div>
+              <div className="br-footer-link-item">
+                <Link href="/story/history">이달의 맛 히스토리</Link>
+              </div>
               <div className="br-footer-link-item">Be Better</div>
             </div>
             <div>
