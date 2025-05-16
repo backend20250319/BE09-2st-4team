@@ -1,3 +1,5 @@
+import "@/styles/store/workshop/workshop-content.css";
+
 export default function WorkshopContent() {
   return (
     <div className="store-workshop">
