@@ -1,4 +1,5 @@
 import PageHeader from "@/components/store/PageHeader";
+import WorkshopContent from "@/components/store/workshop/WorkshopContent";
 
 export default function Workshop() {
   return (
@@ -10,6 +11,7 @@ export default function Workshop() {
           </p>
         </div>
       </PageHeader>
+      <WorkshopContent />
     </section>
   );
 }
