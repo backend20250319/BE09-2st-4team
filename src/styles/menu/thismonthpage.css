@@ -1,0 +1,78 @@
+.month-page {
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+.month-title {
+  color: #f47bb1;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.month-main-box {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.month-header {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.month-eng {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.month-kor {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.month-desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.month-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.month-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.month-new-box {
+  padding: 20px;
+}
+
+.new-title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.new-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  color: #333;
+}
+
+.new-product img {
+  width: 100px;
+  margin-bottom: 6px;
+}
