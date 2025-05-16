@@ -1,0 +1,228 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #3a2a19;
+}
+
+.titleMain {
+  font-weight: 900;
+  font-size: 56px;
+  text-align: center;
+  color: #f08fbf;
+  margin-bottom: 12px;
+  letter-spacing: -1.5px;
+}
+
+.titleSub {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #f3abc9;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.flavorCreationBox {
+  border: 1px solid #dcd0c7;
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  user-select: none;
+}
+
+.flavorImages {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;
+}
+
+.flavorImages img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.plus {
+  color: #f08fbf;
+  font-weight: 700;
+  font-size: 26px;
+  user-select: none;
+}
+
+.flavorText {
+  flex-grow: 1;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  user-select: none;
+}
+
+.highlight {
+  color: #f08fbf;
+}
+
+.participateBtn {
+  background-color: #e94456;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 24px;
+  padding: 12px 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  flex-shrink: 0;
+}
+
+.participateBtn:hover {
+  background-color: #ce3f4e;
+}
+
+.tagSizeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tagLabel {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2e2c2c;
+  width: 50px;
+}
+
+.tagButton {
+  background-color: #fff;
+  border: 1px solid #ccc4c0;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tagButton:hover {
+  background-color: #f7f3f0;
+}
+
+.popularFlavorsWrapper {
+  margin-bottom: 30px;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2e2c2c;
+  margin-bottom: 16px;
+}
+
+.flavorList {
+  display: flex;
+  gap: 30px;
+  user-select: none;
+}
+
+.flavorItem {
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.flavorItem img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.flavorName {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 8px;
+  color: #2e2c2c;
+}
+
+.sizeSelectorWrapper {
+  margin-bottom: 40px;
+}
+
+.sizeButtons {
+  display: flex;
+  gap: 12px;
+  margin: 8px 0 20px;
+}
+
+.sizeButton {
+  background-color: #fff;
+  border: 1px solid #ccc4c0;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 20px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.sizeButton:hover {
+  background-color: #f8e4e8;
+  border-color: #f08fbf;
+}
+
+.sizeButton.active {
+  background-color: #f08fbf;
+  border-color: #f08fbf;
+  color: white;
+}
+
+.resetButton {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 9px 24px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  margin-top: 0;
+}
+
+.resetButton:hover {
+  background-color: #444;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #dbd6d1;
+  margin: 0 0 30px;
+}
+
+.summary {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #362f27;
+  user-select: none;
+}
+
+.summary .highlight {
+  color: #f08fbf;
+}
+
+.breadcrumbbar.active {
+  font-weight: bold;
+  border: 2px solid #f986bd;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
