@@ -9,29 +9,47 @@ body {
 }
 
 /* 네비게이션 */
-.nav {
+.navbar {
+  margin-bottom: 40px;
+}
+
+.nav-menu {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  padding: 16px 0;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f571b4;
 }
-.nav-item {
-  font-size: 0.9rem;
-  color: #f986bd;
-  font-weight: bold;
-  cursor: pointer;
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #f571b4;
+  text-decoration: none;
   padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.2s;
-  text-decoration: none; /* 밑줄 제거 */
+  border-radius: 6px;
+  transition: background-color 0.2s;
 }
-.nav-item.active {
-  background-color: #f986bd;
-  color: #fff;
+
+.nav-link:hover {
+  background-color: #ffe3ee;
 }
-.nav-sep {
-  color: #ccc;
-  pointer-events: none;
+
+.nav-link.active {
+  background-color: #f571b4;
+  color: white;
+}
+
+.nav-divider {
+  color: #f571b4;
+  margin: 0 6px;
 }
 
 /* 타이틀 */
