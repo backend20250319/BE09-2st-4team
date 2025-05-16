@@ -21,7 +21,16 @@ const iceCreams = [
     label: "NEW",
     tags: "#이달의 맛 #칼로프 #메론",
   },
-  // ... 더 추가 가능
+  {
+    name: "피치 요거트",
+    file: "icecream-4.png",
+    tags: "#피치 #요거트트",
+  },
+  {
+    name: "망고 탱고",
+    file: "icecream-5.png",
+    tags: "#망고 #탱고",
+  },
 ];
 
 const IceCreamPage = () => {
@@ -38,7 +47,7 @@ const IceCreamPage = () => {
       <div className="icecream-grid">
         {iceCreams.map((item, index) => (
           <div key={index} className="icecream-item">
-            <a href="#" className="menu-card">
+            <a href="#" className={`menu-card icecream${index}`}>
               <img
                 src={`/images/menu/icecream/${item.file}`}
                 alt={item.name}

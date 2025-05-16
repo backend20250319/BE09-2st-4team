@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import "../styles/Footer.css";
+import "@/styles/Footer.css";
 
 export default function Footer() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
