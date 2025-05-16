@@ -1,0 +1,55 @@
+.dropdown-container {
+  position: relative;
+  width: 200px;
+}
+
+.dropdown-toggle {
+  background-color: #f8a5c2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+  max-height: 0; /* Initial collapsed state */
+}
+
+.dropdown-menu dd {
+  margin-bottom: 8px;
+}
+
+.dropdown-menu dt {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dropdown-menu label {
+  display: block;
+}
+
+.dropdown-menu input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.dropdown-menu label span {
+  font-size: 14px;
+}
+
+.dropdown-menu label:hover {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px;
+}

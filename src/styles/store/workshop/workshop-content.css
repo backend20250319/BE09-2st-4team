@@ -1,3 +1,11 @@
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.store-workshop__top img {
+  display: block;
+  margin: 0 auto;
+}
 .store-workshop {
   width: 1500px;
   margin: 0 auto;
@@ -35,6 +43,11 @@
   gap: 80px;
   align-items: center;
 }
+
+.store-workshop__list ul li:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
 .store-workshop__list ul li h3 {
   font-family: var(--font-family-scoop);
   font-size: 25px;
@@ -55,6 +68,20 @@
 }
 .store-workshop__docent .program {
   color: #132a4f;
+}
+
+.store-workshop__docent .program h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.store-workshop__docent .program h4 {
+  font-family: var(--font-family-scoop);
+  font-size: 25px;
+  margin: 10px 0;
+}
+.store-workshop__docent .program p {
+  font-size: 20px;
+  line-height: 1.25;
 }
 
 .store-workshop__docent > img {
@@ -100,4 +127,16 @@
   gap: 27px;
   letter-spacing: -0.04em;
   margin: 0 auto;
+}
+.store-workshop__map {
+  text-align: center;
+  color: #132a4f;
+}
+.store-workshop__map .box h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.store-workshop__map .box p {
+  font-size: 20px;
+  line-height: 1.25;
 }
