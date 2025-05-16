@@ -94,6 +94,22 @@
   background-color: #ea6b75; /* 호버 시: 핑크색 */
 }
 
+.menu-card.icecream1:hover {
+  background-color: brown;
+}
+
+.menu-card.icecream2:hover {
+  background-color: #ffa736;
+}
+
+.menu-card.icecream4:hover {
+  background-color: #f4a6b3;
+}
+
+.menu-card.icecream4:hover {
+  background-color: #daa520;
+}
+
 /* 아이스크림 이미지 */
 .menu-card__image {
   width: 100%;
