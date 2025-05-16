@@ -1,0 +1,64 @@
+.brplay-container {
+  width: 100%;
+  background-image: url("/images/main/brplay_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+
+.brplay-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.brplay-header {
+  margin-bottom: 40px;
+}
+
+.brplay-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  font-family: "Sandoll GothicNeo1 TTF", sans-serif; /* 디자인에 표시된 폰트 */
+}
+
+.brplay-description {
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+}
+
+.brplay-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.brplay-card-image {
+  width: 280px;
+  height: auto;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .brplay-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .brplay-card-image {
+    width: 240px;
+  }
+
+  .brplay-title {
+    font-size: 28px;
+  }
+
+  .brplay-description {
+    font-size: 14px;
+  }
+}
