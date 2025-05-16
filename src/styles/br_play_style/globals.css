@@ -1,6 +1,6 @@
 /* src/styles/globals.css */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-
+/* play */
 body {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -207,3 +207,5 @@ ul.event-list-list__list {
   overflow: hidden;
   font-weight: 900;
 }
+
+/* plaza */

@@ -1,5 +1,5 @@
-import EventPage from "@/components/play/br_play/EventPage";
-
-export default function HomePage() {
+import EventPage from "@/components/play/plaza/plazaPage";
+import React from "react";
+export default function Plaza() {
   return <EventPage />;
 }

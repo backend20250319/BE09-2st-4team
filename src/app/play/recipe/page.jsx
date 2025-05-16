@@ -1,4 +1,5 @@
-import EventPage from "@/components/play/br_play/EventPage";
+import EventPage from "@/components/play/recipe/recipePage";
+
 export default function HomePage() {
   return <EventPage />;
 }
