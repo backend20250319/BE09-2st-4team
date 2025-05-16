@@ -124,7 +124,6 @@ export default function HistoryPage() {
       setSelectedYear(storedYear);
     }
 
-    // Footer의 Be Better 클릭 처리
     const footerLinks = document.querySelectorAll(".br-footer-link-item");
     footerLinks.forEach((item) => {
       if (item.textContent.includes("Be Better")) {
@@ -171,8 +170,12 @@ export default function HistoryPage() {
       </p>
 
       <div className="tabs">
-        <button className="tab active">연도별 보기</button>
-        <button className="tab">테마별 보기</button>
+        <Link href="/story/history">
+          <button className="tab active">연도별 보기</button>
+        </Link>
+        <Link href="/story/historythema">
+          <button className="tab ">테마별 보기</button>
+        </Link>
       </div>
 
       <ul className="year-list with-dividers">
