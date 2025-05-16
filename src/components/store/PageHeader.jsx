@@ -1,3 +1,5 @@
+import "@/styles/store/PageHeader.css";
+
 export default function PageHeader({ title, children }) {
   return (
     <header className="page-header">
