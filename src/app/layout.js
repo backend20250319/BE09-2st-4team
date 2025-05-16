@@ -1,7 +1,6 @@
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/mainpage/main.css";
-import "../styles/header.css";
+import "@/styles/Header.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -14,7 +13,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata = {
   title: "배스킨라빈스",
