@@ -49,9 +49,6 @@ export default function BannerSlider() {
     }
   };
 
-  // 모든 팝업이 사라진 후 버튼이 마지막에 이동하도록 딜레이 계산
-  // const buttonDelay = `${popups.length * 0.1 + 0.1}s`;
-
   return (
     <div className="frame-container">
       <div className="slider-container">

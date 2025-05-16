@@ -90,10 +90,10 @@ body {
 
 .popup-toggle {
   position: relative;
-  align-self: flex-end;
+  align-self: flex-start;
   margin-top: 8px;
-  width: 56px;
-  height: 56px;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
   display: flex;
   align-items: center;

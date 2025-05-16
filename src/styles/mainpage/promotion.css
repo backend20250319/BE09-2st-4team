@@ -1,0 +1,145 @@
+/* 프로모션 섹션 스타일 */
+.promotion-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.promotion-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 메인 헤더 텍스트 스타일 */
+.main-header__text {
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ff5484;
+  margin-bottom: 10px;
+  font-family: "Scoop", "Sandoll GothicNeo1", sans-serif;
+}
+
+.main-header__description {
+  font-size: 16px;
+  color: #888;
+  margin: 0;
+}
+
+/* 슬라이더 컨테이너 */
+.promotion-slider-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+  /* 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.promotion-slider-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* 슬라이더 */
+.promotion-slider {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  width: fit-content; /* 내용에 맞게 너비 설정 */
+}
+
+/* 프로모션 카드 */
+.promotion-card {
+  flex: 0 0 230px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.promotion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-image {
+  width: 100%;
+  height: 230px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.promotion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promotion-period {
+  font-size: 12px;
+  color: #888;
+  padding: 10px 15px 5px;
+}
+
+.promotion-title {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 15px 15px;
+  line-height: 1.4;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 네비게이션 점 */
+.promotion-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.promotion-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promotion-dot.active {
+  background-color: #ff4d72;
+  width: 25px;
+  border-radius: 10px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .main-header__text {
+    font-size: 40px;
+  }
+
+  .main-header__description {
+    font-size: 14px;
+  }
+
+  .promotion-card {
+    flex: 0 0 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-header__text {
+    font-size: 30px;
+  }
+
+  .promotion-card {
+    flex: 0 0 180px;
+  }
+}
