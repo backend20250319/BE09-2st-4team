@@ -13,17 +13,17 @@ export default function BannerSlider() {
     {
       id: "promo",
       //title: "우석이 디지털 굿즈 2차 지금 다운로드",
-      image: "/images/popup1.png",
+      image: "/images/main/popup1.png",
     },
     {
       id: "flavor",
       //title: "5월 이달의 맛 선택, 500원 추가 시 싱글레귤러 더블주니어!",
-      image: "/images/popup2.png",
+      image: "/images/main/popup2.png",
     },
     {
       id: "event",
       //title: "우석이와 배라타임",
-      image: "/images/popup3.png",
+      image: "/images/main/popup3.png",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function BannerSlider() {
     <div className="frame-container">
       <div className="slider-container">
         <img
-          src="/images/main_banner.png"
+          src="/images/main/main_banner.png"
           alt="메인배너"
           className="banner-img"
         />
