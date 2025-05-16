@@ -6,55 +6,56 @@ const iceCreamCakes = [
   {
     name: "골라먹는 27 큐브 ",
     file: "icecreamcake-1.png",
-    label: "NEW",
+    label: "BEST",
     tags: "#딸기 #치즈케이크 #민트",
   },
   {
-    name: "아이 원-츄!",
+    name: "골라먹는 와츄원",
     file: "icecreamcake-2.png",
-    label: "NEW",
-    tags: "#이달의 맛 #쫀득쫀득",
+    label: "BEST",
+    tags: "#치즈 #민트 #딸기 #초콜릿",
   },
   {
-    name: "아이스 칼로프 멜론",
+    name: "진정한 티라미수 케이크",
     file: "icecreamcake-3.png",
-    label: "NEW",
-    tags: "#이달의 맛 #칼로프 #메론",
+    label: "추천천",
+    tags: "#자모카커피 #마스카포네치즈",
   },
   {
-    name: "피치 요거트",
+    name: "우주에서 온 엄마는 외계인",
     file: "icecreamcake-4.png",
-    tags: "#피치 #요거트트",
+    tags: "#베리베리스트로베리 #아몬드봉봉 #엄마는외계인#민트초콜릿칩",
   },
   {
-    name: "망고 탱고",
+    name: "반짝이는 잔망루피",
     file: "icecreamcake-5.png",
-    tags: "#망고 #탱고",
+    tags: "#솜사탕 #트리플초콜릿 #초콜릿칩 #초콜릿",
   },
 ];
 
-const IceCreamPage = () => {
+const IceCreamCakePage = () => {
   return (
     <main className="content">
-      <h1 className="title">Ice Cream</h1>
+      <h1 className="title">Ice Cream Cake</h1>
       <p className="subtitle">
-        한 입에 물면 달콤하게 사르르 녹는 아이스크림.
+        축하하고 싶은 날에도, 위로가 필요한 날에도, 그 모든 순간 함께 할
+        아이스크림 케이크.
         <br />
-        당신이 어떤 기분이든 그 아이스크림을 따라 당신의 기분은 아마 달콤해졌을
-        거예요.
+        달콤한 아이스크림 케이크로 당신의 특별한 날을 더욱더 특별하게
+        만들어드릴게요.
       </p>
 
-      <div className="icecream-grid">
-        {iceCreams.map((item, index) => (
-          <div key={index} className="icecream-item">
-            <a href="#" className={`menu-card icecream${index}`}>
+      <div className="icecreamcake-grid">
+        {iceCreamCakes.map((item, index) => (
+          <div key={index} className="icecreamcake-item">
+            <a href="#" className={`menu-card icecreamcake${index}`}>
               <img
-                src={`/images/menu/icecream/${item.file}`}
+                src={`/images/menu/icecreamcake/${item.file}`}
                 alt={item.name}
                 className="menu-card__image"
               />
               {item.label && (
-                <div className="icecream-ribbon">{item.label}</div>
+                <div className="icecreamcake-ribbon">{item.label}</div>
               )}
               <span className="menu-card__hash">{item.tags}</span>
             </a>
@@ -67,4 +68,4 @@ const IceCreamPage = () => {
   );
 };
 
-export default IceCreamPage;
+export default IceCreamCakePage;
