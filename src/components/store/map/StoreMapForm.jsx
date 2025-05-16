@@ -3,6 +3,7 @@
 import { locationData } from "@/data/store/locationData";
 import { useState } from "react";
 import DropdownButton from "./DropdownButton";
+import "@/styles/store/map/store-map-form.css";
 
 export default function StoreMapForm() {
   const [storeType, setStoreType] = useState([]);
@@ -19,7 +20,7 @@ export default function StoreMapForm() {
   };
 
   return (
-    <div>
+    <div className="store-map__content">
       <form action="">
         <fieldset>
           <DropdownButton
