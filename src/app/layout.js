@@ -1,6 +1,7 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/mainpage/main.css";
-import "../styles/header.css";
+import "../styles/Header.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -14,6 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata = {
   title: "배스킨라빈스",
   description: "프리미엄 아이스크림 브랜드",
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="viewport" content="width=1280, user-scalable=no" />
       </head>
+
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         <main
