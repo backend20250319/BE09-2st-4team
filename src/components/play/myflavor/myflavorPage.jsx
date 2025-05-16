@@ -41,13 +41,7 @@ export default function FlavorList() {
 
       <div className={styles.flavorCreationBox}>
         <div className={styles.flavorImages}>
-          <img src="/images/flavor1.png" alt="Flavor 1" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor2.png" alt="Flavor 2" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor3.png" alt="Flavor 3" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor4.png" alt="Flavor 4" />
+          <img src="/images/promotion/myflavor1.png" alt="myflavor 1" />
         </div>
         <div className={styles.flavorText}>
           내맘대로 추천하는{" "}
@@ -64,14 +58,16 @@ export default function FlavorList() {
       </div>
 
       <div className={styles.popularFlavorsWrapper}>
-        <div className={styles.label}>인기 플레이버</div>
-        <div className={styles.flavorList}>
-          {popularFlavors.map(({ id, name, img }) => (
-            <div key={id} className={styles.flavorItem}>
-              <img src={img} alt={name} />
-              <div className={styles.flavorName}>{name}</div>
-            </div>
-          ))}
+        <div className={styles.popularFlavorsInner}>
+          <div className={styles.label}>인기 플레이버</div>
+          <div className={styles.flavorList}>
+            {popularFlavors.map(({ id, name, img }) => (
+              <div key={id} className={styles.flavorItem}>
+                <img src={img} alt={name} />
+                <div className={styles.flavorName}>{name}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
