@@ -1,0 +1,167 @@
+.beverage-page {
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  background-color: white;
+  color: #f571b4;
+  padding: 40px 20px;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  margin-bottom: 40px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f571b4;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #f571b4;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #ffe3ee;
+}
+
+.nav-link.active {
+  background-color: #f571b4;
+  color: white;
+}
+
+.nav-divider {
+  color: #f571b4;
+  margin: 0 6px;
+}
+
+/* 제목/부제목 */
+.content .title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #f571b4;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 아이스크림 케익 그리드 */
+.beverage-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px 20px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+/* 아이스크림 케익 카드 전체 링크 */
+.menu-card {
+  position: relative;
+  width: 233px;
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white; /* 기본: 흰색 */
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  padding-top: 10px;
+  transition: background-color 0.3s ease; /* 부드럽게 전환 */
+}
+
+.menu-card:hover {
+  background-color: lightblue; /* 호버 시: 핑크색 */
+}
+
+.menu-card.beverage0:hover {
+  background-color: #def6f5;
+}
+
+.menu-card.beverage1:hover {
+  background-color: #ea6b75;
+}
+
+.menu-card.beverage3:hover {
+  background-color: #d8a24c;
+}
+
+.menu-card.beverage4:hover {
+  background-color: chocolate;
+}
+
+/* 아이스크림 이미지 */
+.menu-card__image {
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.menu-card:hover .menu-card__image {
+  transform: translateY(50%);
+}
+
+/* 해시태그 텍스트 */
+.menu-card__hash {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff4dd;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.menu-card:hover .menu-card__hash {
+  opacity: 1;
+}
+
+/* 이름 텍스트 */
+.beverage-name {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #888;
+}
+
+/* NEW 라벨 */
+.beverage-ribbon {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background-color: #e91e63;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 20px;
+  transform: rotate(-45deg);
+  border-radius: 6px;
+  z-index: 3;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
