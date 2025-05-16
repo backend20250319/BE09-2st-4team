@@ -49,7 +49,14 @@ export default function MenuLayout({ children }) {
             <span className="nav-divider">|</span>
           </li>
           <li>
-            <Link href="#" className="nav-link">
+            <Link
+              href="/menu/icecreamcake"
+              className={
+                pathname === "/menu/icecreamcake"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
               아이스크림케이크
             </Link>
           </li>
@@ -57,7 +64,12 @@ export default function MenuLayout({ children }) {
             <span className="nav-divider">|</span>
           </li>
           <li>
-            <Link href="#" className="nav-link">
+            <Link
+              href="/menu/dessert"
+              className={
+                pathname === "/menu/dessert" ? "nav-link active" : "nav-link"
+              }
+            >
               디저트
             </Link>
           </li>
@@ -65,7 +77,12 @@ export default function MenuLayout({ children }) {
             <span className="nav-divider">|</span>
           </li>
           <li>
-            <Link href="#" className="nav-link">
+            <Link
+              href="/menu/beverage"
+              className={
+                pathname === "/menu/beverage" ? "nav-link active" : "nav-link"
+              }
+            >
               음료
             </Link>
           </li>
@@ -73,7 +90,12 @@ export default function MenuLayout({ children }) {
             <span className="nav-divider">|</span>
           </li>
           <li>
-            <Link href="#" className="nav-link">
+            <Link
+              href="/menu/coffee"
+              className={
+                pathname === "/menu/coffee" ? "nav-link active" : "nav-link"
+              }
+            >
               커피
             </Link>
           </li>

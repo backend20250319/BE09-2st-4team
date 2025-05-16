@@ -2,23 +2,19 @@
 
 import { useState, useEffect } from "react";
 import BannerSlider from "../components/mainpage/BannerSilider.jsx";
+import PromotionSection from "../components/mainpage/PromotionSection.jsx";
 import "../styles/mainpage/main.css"; // 메인 페이지 스타일 import
 
 export default function Home() {
   return (
     <main className="home-container">
-      {/* 메인 슬라이더/캐러셀 */}
+      {/* 메인 슬라이더 */}
       <section className="main-slider-section">
         <BannerSlider />
       </section>
 
       {/* 프로모션 및 이벤트 섹션 */}
-      <section className="promotion-section">
-        <h2 className="section-title">배라의 다양한 혜택과 이벤트</h2>
-        <div className="events-container">
-          {/* 이벤트 카드들이 들어갈 자리 */}
-        </div>
-      </section>
+      <PromotionSection />
 
       {/* 신제품 소개 섹션 */}
       <section className="new-products-section">
