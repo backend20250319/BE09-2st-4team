@@ -5,16 +5,22 @@ export default function BeBetterSection() {
   const bebetterItems = [
     {
       id: 1,
-      image: "/images/main/pinkpang.jpg",
+      image: "/images/main/img_farm.png",
     },
     {
       id: 2,
-      image: "/images/main/pinktori.jpg",
+      image: "/images/main/img_dream.png",
     },
     {
       id: 3,
-      image: "/images/main/pinkfriends.jpg",
+      image: "/images/main/img_link.png",
     },
+  ];
+
+    const itemTexts = [
+    "핑크팜 캠페인\n지역 농가 상생 프로젝트",
+    "핑크드림 캠페인\n청소년 자립 지원 프로젝트",
+    "핑크링크 캠페인\n중소 기업 콜라보 프로젝트"
   ];
 
   return (
