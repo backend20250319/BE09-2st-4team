@@ -3,8 +3,29 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "@/styles/store/PageMenu.css";
-
-export default function PageMenu({ items }) {
+const items = [
+  {
+    href: "/store/map",
+    label: "매장 찾기",
+  },
+  {
+    href: "/store/flavor",
+    label: "100 flavor",
+  },
+  {
+    href: "/store/workshop",
+    label: "Workshop",
+  },
+  {
+    href: "/store/delivery",
+    label: "배달주문",
+  },
+  {
+    href: "/store/catering",
+    label: "단체주문",
+  },
+];
+export default function PageMenu() {
   const pathname = usePathname();
   // console.log(pathname);
 
