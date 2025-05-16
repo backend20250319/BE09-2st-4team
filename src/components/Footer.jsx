@@ -114,7 +114,9 @@ export default function Footer() {
               <div className="br-footer-link-item">
                 <Link href="/story/history">이달의 맛 히스토리</Link>
               </div>
-              <div className="br-footer-link-item">Be Better</div>
+              <div className="br-footer-link-item">
+                <Link href="/story/bebetter">Be Better</Link>
+              </div>
             </div>
             <div>
               <div className="br-footer-link-title">Delivery/Store</div>

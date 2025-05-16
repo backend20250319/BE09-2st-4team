@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import FlavorPage from "@/components/FlavorPage";
+import FlavorPage from "@/components/story/flavor/FlavorPage";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import "@/styles/flavorpage.css";
@@ -157,7 +157,7 @@ export default function HistoryPage() {
         </span>
         <span className="divider">|</span>
         <Link
-          href="/bebetter"
+          href="/story/bebetter"
           className="breadcrumbbar"
           style={{ textDecoration: "none" }}
         >

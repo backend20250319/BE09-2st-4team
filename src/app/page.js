@@ -2,8 +2,8 @@ import Image from "next/image";
 import styles from "@/styles/flavorpage.css";
 import React from "react";
 import Footer from "./../components/Footer.jsx";
-import BeBetterPage from "../components/BeBetterPage.jsx";
-import FlavorPage from "../components/FlavorPage";
+import BeBetterPage from "../components/story/bebetter/BeBetterPage.jsx";
+import FlavorPage from "../components/story/flavor/FlavorPage.jsx";
 
 export default function Home() {
   return (
