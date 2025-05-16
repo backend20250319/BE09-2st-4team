@@ -11,6 +11,11 @@
 }
 
 .br-footer {
+  /* position: fixed;   */
+  bottom: 0;
+  left: 0;
+  /* width: 100%;      */
+  z-index: 1000;
   background: #1d1c15;
   color: #fbfbfb;
   font-family: "Scoop-Extrabold", "Arial Rounded MT Bold", Arial, sans-serif;
