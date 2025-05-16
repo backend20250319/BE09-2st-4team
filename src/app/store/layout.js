@@ -27,10 +27,10 @@ export default function RootLayout({ children }) {
 
   return (
     <>
-      {/* <SiteContainer> */}
-      <PageMenu items={items} />
-      {children}
-      {/* </SiteContainer> */}
+      <SiteContainer>
+        <PageMenu items={items} />
+        {children}
+      </SiteContainer>
     </>
   );
 }

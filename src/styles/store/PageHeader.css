@@ -11,7 +11,6 @@ h2 {
 }
 
 .page-header__container {
-  width: var(--size-pc);
   margin: 0 auto;
 }
 
@@ -23,7 +22,6 @@ h2 {
   display: inline-block;
   position: relative;
   color: #f986bd;
-  font-family: var(--font-family-scoop);
   font-weight: 700;
   font-size: 90px;
   letter-spacing: -0.025em;
@@ -38,7 +36,7 @@ h2 {
   display: inline-block;
   padding: 0 25px;
   color: #f986bd;
-  font-weight: var(--font-weight-sd-bold);
+  font-weight: 600px;
   font-size: 20px;
   line-height: 1.5;
 }
