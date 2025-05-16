@@ -70,7 +70,7 @@ export default function Footer() {
         <div className="br-footer-main">
           <div className="br-footer-logo-col">
             <img
-              src="/images/footer/h_logo_2.png"
+              src="/images/Footer/h_logo_2.png"
               alt="BR Logo"
               className="br-footer-logo"
             />
@@ -111,6 +111,7 @@ export default function Footer() {
             <div>
               <div className="br-footer-link-title">BR Story</div>
               <div className="br-footer-link-item">브랜드 스토리</div>
+
               <div className="br-footer-link-item">
                 <Link href="/story/history">이달의 맛 히스토리</Link>
               </div>
