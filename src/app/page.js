@@ -1,10 +1,11 @@
-"use client"; // Next.js 13 이상에서 클라이언트 컴포넌트임을 명시
+"use client";
 
 import { useState, useEffect } from "react";
 import BannerSlider from "../components/mainpage/BannerSilider.jsx";
 import PromotionSection from "../components/mainpage/PromotionSection.jsx";
 import NewItemSection from "@/components/mainpage/NewItemSection.jsx";
-import "../styles/mainpage/main.css"; // 메인 페이지 스타일 import
+import BRPlaySection from "@/components/mainpage/BrPlay.jsx";
+import "../styles/mainpage/main.css";
 
 export default function Home() {
   return (
@@ -27,8 +28,8 @@ export default function Home() {
 
       {/* 브랜드 스토리 및 사회공헌 섹션 */}
       <section className="brand-section">
-        <h2 className="section-title">배라와 함께하는 가치 있는 같이</h2>
         {/* 브랜드 스토리 내용 */}
+        <BRPlaySection />
       </section>
 
       {/* 매장 찾기 섹션 */}
