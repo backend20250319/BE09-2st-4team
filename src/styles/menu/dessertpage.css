@@ -1,4 +1,4 @@
-.icecream-page {
+.dessert-page {
   font-family: "Helvetica Neue", sans-serif;
   text-align: center;
   background-color: white;
@@ -65,8 +65,8 @@
   margin: 0 auto;
 }
 
-/* 아이스크림 그리드 */
-.icecream-grid {
+/* 아이스크림 케익 그리드 */
+.dessert-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px 20px;
@@ -74,7 +74,7 @@
   justify-items: center;
 }
 
-/* 아이스크림 카드 전체 링크 */
+/* 아이스크림 케익 카드 전체 링크 */
 .menu-card {
   position: relative;
   width: 233px;
@@ -91,23 +91,23 @@
 }
 
 .menu-card:hover {
-  background-color: #ea6b75; /* 호버 시: 핑크색 */
+  background-color: #4d2420; /* 호버 시: 핑크색 */
 }
 
-.menu-card.icecream1:hover {
-  background-color: brown;
+.menu-card.dessert0:hover {
+  background-color: chocolate;
 }
 
-.menu-card.icecream2:hover {
-  background-color: #ffa736;
+.menu-card.dessert1:hover {
+  background-color: #ea6b75;
 }
 
-.menu-card.icecream4:hover {
-  background-color: #f4a6b3;
+.menu-card.dessert2:hover {
+  background-color: lavender;
 }
 
-.menu-card.icecream4:hover {
-  background-color: #daa520;
+.menu-card.dessert4:hover {
+  background-color: #e97d84;
 }
 
 /* 아이스크림 이미지 */
@@ -143,7 +143,7 @@
 }
 
 /* 이름 텍스트 */
-.icecream-name {
+.dessert-name {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 600;
@@ -151,7 +151,7 @@
 }
 
 /* NEW 라벨 */
-.icecream-ribbon {
+.dessert-ribbon {
   position: absolute;
   top: 10px;
   left: -20px;

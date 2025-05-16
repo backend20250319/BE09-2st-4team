@@ -16,9 +16,18 @@ const ThisMonthPage = () => {
             인기 최고! 보기만 해도 귀여운 곰젤리 덩어리 가득!
           </p>
           <div className="month-icons">
-            <span>🍓 딸기</span>
-            <span>🍌 바나나</span>
-            <span>🧸 곰젤리</span>
+            <div className="icon-item">
+              <img src="/images/menu/thismonth/strawberry.png" alt="딸기" />
+              <p>딸기</p>
+            </div>
+            <div className="icon-item">
+              <img src="/images/menu/thismonth/banana.png" alt="바나나" />
+              <p>바나나</p>
+            </div>
+            <div className="icon-item">
+              <img src="/images/menu/thismonth/bearjelly.png" alt="곰 젤리" />
+              <p>곰 젤리</p>
+            </div>
           </div>
         </div>
 
