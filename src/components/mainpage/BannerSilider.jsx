@@ -1,12 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-// import BannerSlider from "../components/BannerSlider.jsx"
-// import "../styles/main.css";
 
 export default function BannerSlider() {
   const [visible, setVisible] = useState(false);
   const [initialLoad, setInitialLoad] = useState(true);
+  const [animationComplete, setAnimationComplete] = useState(false);
 
   // 팝업 데이터
   const popups = [
@@ -28,16 +27,26 @@ export default function BannerSlider() {
   ];
 
   useEffect(() => {
-    // setVisible(false);
-
     setTimeout(() => {
       setVisible(true);
       setInitialLoad(false);
     }, 700);
-  }, []);
+
+    if (visible) {
+      const totalAnimationTime = (popups.length * 0.2 + 0.4) * 1000; // 밀리초 단위로 변환
+      const timer = setTimeout(() => {
+        setAnimationComplete(true);
+      }, totalAnimationTime);
+
+      return () => clearTimeout(timer);
+    }
+  }, [visible, popups.length]);
 
   const togglePopup = () => {
     setVisible(!visible);
+    if (!visible) {
+      setAnimationComplete(false);
+    }
   };
 
   // 모든 팝업이 사라진 후 버튼이 마지막에 이동하도록 딜레이 계산
@@ -60,9 +69,12 @@ export default function BannerSlider() {
                 key={popup.id}
                 style={{
                   // transitionDelay: `${index * 0.2}s`,
+                  // transitionDelay: visible
+                  //   ? `${index * 0.2}s` // 표시될 때는 위에서부터(첫 번째부터)
+                  //   : `${index * 0.2}s`, // 사라질 때도 위에서부터(첫 번째부터)
                   transitionDelay: visible
-                    ? `${index * 0.2}s` // 표시될 때는 위에서부터(첫 번째부터)
-                    : `${index * 0.2}s`, // 사라질 때도 위에서부터(첫 번째부터)
+                    ? `${index * 0.2}s`
+                    : `${(popups.length - index - 1) * 0.2}s`,
                 }}
               >
                 <div className="popup-image-container">
@@ -72,18 +84,24 @@ export default function BannerSlider() {
             ))}
 
             {/*  */}
-            <button
+            <div
               className={`popup-toggle ${visible ? "visible" : "hidden"}`}
               onClick={togglePopup}
               style={{
                 // transitionDelay: `${popups.length * 0.1}s`,
                 transitionDelay: visible
-                  ? `${popups.length * 0.2 + 0.2}s` // 마지막 팝업 이후 나타남
-                  : `${popups.length * 0.2 + 0.2}s`, // 마지막 팝업 이후 사라짐
+                  ? `${popups.length * 0.2 + 0.2}s`
+                  : "0s",
+                // ? `${popups.length * 0.2 + 0.2}s` // 마지막 팝업 이후 나타남
+                // : `${popups.length * 0.2 + 0.2}s`, // 마지막 팝업 이후 사라짐
               }}
             >
-              {visible ? "x" : "+"}
-            </button>
+              <img
+                src="/images/main/btn_icon.png"
+                alt={visible ? "닫기" : "열기"}
+                className="toggle-button-img"
+              />
+            </div>
           </div>
         </div>
       </div>
