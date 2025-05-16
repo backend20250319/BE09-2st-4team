@@ -2,53 +2,53 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import "@/styles/flavorpage/flavorthemapage.css";
+import "@/styles/story/flavorpage/flavorthemapage.css";
 
 const CATEGORY_TABS = [
   {
     name: "배라이즈백",
     id: "back",
-    icon: "/images/FlavorPage/icon_is_back.png",
+    icon: "/images/story/FlavorPage/icon_is_back.png",
   },
   {
     name: "레전더리플레이버",
     id: "legend",
-    icon: "/images/FlavorPage/icon_legend.png",
+    icon: "/images/story/FlavorPage/icon_legend.png",
   },
   {
     name: "그래미맛어워드",
     id: "grammy",
-    icon: "/images/FlavorPage/icon_gray.png",
+    icon: "/images/story/FlavorPage/icon_gray.png",
   },
   {
     name: "올해의플레이버",
     id: "flavoroftheyear",
-    icon: "/images/FlavorPage/icon_gray.png",
+    icon: "/images/story/FlavorPage/icon_gray.png",
   },
 ];
 
 const CATEGORY_IMAGES = {
   back: [
-    "/images/FlavorPage/bib-1.jpg",
-    "/images/FlavorPage/bib-2.jpg",
-    "/images/FlavorPage/bib-3.jpg",
-    "/images/FlavorPage/bib-4.jpg",
-    "/images/FlavorPage/bib-5.jpg",
-    "/images/FlavorPage/bib-6.jpg",
-    "/images/FlavorPage/bib-7.jpg",
-    "/images/FlavorPage/bib-8.jpg",
-    "/images/FlavorPage/bib-9.png",
+    "/images/story/FlavorPage/bib-1.jpg",
+    "/images/story/FlavorPage/bib-2.jpg",
+    "/images/story/FlavorPage/bib-3.jpg",
+    "/images/story/FlavorPage/bib-4.jpg",
+    "/images/story/FlavorPage/bib-5.jpg",
+    "/images/story/FlavorPage/bib-6.jpg",
+    "/images/story/FlavorPage/bib-7.jpg",
+    "/images/story/FlavorPage/bib-8.jpg",
+    "/images/story/FlavorPage/bib-9.png",
   ],
-  legend: ["/images/FlavorPage/Lf-1.jpg", "/images/FlavorPage/Lf-2.jpg"],
+  legend: ["/images/story/FlavorPage/Lf-1.jpg", "/images/story/FlavorPage/Lf-2.jpg"],
   grammy: [
-    "/images/FlavorPage/gfa-1.jpg",
-    "/images/FlavorPage/gfa-2.jpg",
-    "/images/FlavorPage/gfa-3.jpg",
-    "/images/FlavorPage/gfa-4.jpg",
-    "/images/FlavorPage/gfa-5.jpg",
-    "/images/FlavorPage/gfa-6.jpg",
-    "/images/FlavorPage/gfa-7.jpg",
-    "/images/FlavorPage/gfa-8.jpg",
+    "/images/story/FlavorPage/gfa-1.jpg",
+    "/images/story/FlavorPage/gfa-2.jpg",
+    "/images/story/FlavorPage/gfa-3.jpg",
+    "/images/story/FlavorPage/gfa-4.jpg",
+    "/images/story/FlavorPage/gfa-5.jpg",
+    "/images/story/FlavorPage/gfa-6.jpg",
+    "/images/story/FlavorPage/gfa-7.png",
+    "/images/story/FlavorPage/gfa-8.png",
   ],
   flavoroftheyear: [],
 };

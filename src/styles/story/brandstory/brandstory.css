@@ -1,0 +1,39 @@
+.bebetter-wrapper * {
+  box-sizing: border-box;
+  word-break: keep-all;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  font-size: 20px;
+  color: #f986bd;
+  margin-top: 50px;
+  white-space: nowrap;
+}
+
+.bebetter-title {
+  font-size: 90px;
+  font-weight: 800;
+  color: #f986bd;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.breadcrumbbar,
+.breadcrumbbar a {
+  color: #f986bd;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.breadcrumbbar.active {
+  font-weight: bold;
+  border: 2px solid #f986bd;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
