@@ -1,34 +1,34 @@
 "use client";
 import React from "react";
-import "@/styles/menu/icecreampage.css";
+import "@/styles/menu/icecreamcakepage.css";
 
-const iceCreams = [
+const iceCreamCakes = [
   {
-    name: "봄날의 곰을 좋아하세요?",
-    file: "icecream-1.png",
+    name: "골라먹는 27 큐브 ",
+    file: "icecreamcake-1.png",
     label: "NEW",
-    tags: "#이달의 맛 #딸기 #바나나 #곰돌이젤리",
+    tags: "#딸기 #치즈케이크 #민트",
   },
   {
     name: "아이 원-츄!",
-    file: "icecream-2.png",
+    file: "icecreamcake-2.png",
     label: "NEW",
     tags: "#이달의 맛 #쫀득쫀득",
   },
   {
     name: "아이스 칼로프 멜론",
-    file: "icecream-3.png",
+    file: "icecreamcake-3.png",
     label: "NEW",
     tags: "#이달의 맛 #칼로프 #메론",
   },
   {
     name: "피치 요거트",
-    file: "icecream-4.png",
+    file: "icecreamcake-4.png",
     tags: "#피치 #요거트트",
   },
   {
     name: "망고 탱고",
-    file: "icecream-5.png",
+    file: "icecreamcake-5.png",
     tags: "#망고 #탱고",
   },
 ];
