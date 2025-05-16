@@ -18,7 +18,7 @@ const iceCreamCakes = [
   {
     name: "진정한 티라미수 케이크",
     file: "icecreamcake-3.png",
-    label: "추천천",
+    label: "추천",
     tags: "#자모카커피 #마스카포네치즈",
   },
   {
@@ -59,7 +59,7 @@ const IceCreamCakePage = () => {
               )}
               <span className="menu-card__hash">{item.tags}</span>
             </a>
-            <p className="icecream-name">{item.name}</p>{" "}
+            <p className="icecreamcake-name">{item.name}</p>{" "}
             {/* 카드 외부로 분리된 이름 */}
           </div>
         ))}
