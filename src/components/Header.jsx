@@ -6,7 +6,6 @@ import Image from "next/image";
 
 import "@/styles/Header.css";
 
-
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(null);
 
