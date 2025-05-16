@@ -11,9 +11,10 @@
   align-items: center;
   gap: 24px;
   font-size: 14px;
-  color: #f986bd;
+  color: #ed5fa5;
   margin-bottom: 8px;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .divider {

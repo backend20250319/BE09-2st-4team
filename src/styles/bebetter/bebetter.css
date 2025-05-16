@@ -41,6 +41,7 @@
 }
 
 .bebetter-title {
+  
   font-size: 64px;
   font-weight: 800;
   color: #f986bd;
@@ -69,7 +70,7 @@
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 32px;
+  padding: 0px;
   width: 100%;
 }
 
@@ -78,6 +79,7 @@
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
+
 }
 
 .bebetter-text {
@@ -93,13 +95,19 @@
   margin: 0 0 16px 0;
 }
 .bebetter-blocksidetitle1 {
+  margin-top: 40px;
   color: #fd565a;
+  font-size: 60px;
 }
 .bebetter-blocksidetitle2 {
+  margin-top: 40px;
   color: #ae8d60;
+  font-size: 60px;
 }
 .bebetter-blocksidetitle3 {
+  margin-top: 40px;
   color: #00932b;
+  font-size: 60px;
 }
 
 .card-header {
@@ -112,7 +120,7 @@
 .highlight-red,
 .highlight-brown,
 .highlight-green {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
 }
 .more-link {
@@ -125,9 +133,11 @@
 }
 
 .detail {
-  font-size: 14px;
+  
+  font-size: 17px;
   color: #777;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+
 }
 
 .check-list {
@@ -162,6 +172,7 @@
   font-size: 15px;
   font-weight: bold;
   min-height: 30px;
+  
 }
 .content1 {
   color: #fd565a;
