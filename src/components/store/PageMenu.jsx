@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import "@/styles/store/PageMenu.css";
 
 export default function PageMenu({ items }) {
   const pathname = usePathname();
