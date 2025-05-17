@@ -9,7 +9,7 @@
   margin: 0;
   padding: 40px 0;
   background-color: white;
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 /* 내부 콘텐츠를 중앙 정렬하기 위한 컨테이너 */
