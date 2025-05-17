@@ -11,17 +11,14 @@ export default function BannerSlider() {
   const popups = [
     {
       id: "promo",
-      //title: "우석이 디지털 굿즈 2차 지금 다운로드",
       image: "/images/main/popup1.png",
     },
     {
       id: "flavor",
-      //title: "5월 이달의 맛 선택, 500원 추가 시 싱글레귤러 더블주니어!",
       image: "/images/main/popup2.png",
     },
     {
       id: "event",
-      //title: "우석이와 배라타임",
       image: "/images/main/popup3.png",
     },
   ];
@@ -80,7 +77,6 @@ export default function BannerSlider() {
               </div>
             ))}
 
-            {/*  */}
             <div
               className={`popup-toggle ${visible ? "visible" : "hidden"}`}
               onClick={togglePopup}
