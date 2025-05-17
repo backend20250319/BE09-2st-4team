@@ -8,7 +8,7 @@ import "@/styles/story/bebetter/modal.css";
 
 export default function BeBetterPage() {
   return (
-    <main className="bebetter-wrapper">
+    <main className="bebetter-wrapper3">
       <div className="breadcrumb">
         <Link href="/story/history" className="breadcrumbbar">
           브랜드 스토리

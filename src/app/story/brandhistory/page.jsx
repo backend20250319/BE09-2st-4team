@@ -18,6 +18,7 @@ const storyItems = [
            (Burton's Ice Cream)을 열었습니다.`,
     img: "/images/story/brandhistory/img_item_1.jpg",
     iconPosition: "left",
+    offsetClass: "offset-1"
   },
   {
     year: "1960",
@@ -35,6 +36,7 @@ const storyItems = [
           이는 곧 선풍적인 인기를 끌었습니다`,
     img: "/images/story/brandhistory/img_item_2.jpg",
     iconPosition: "right",
+    offsetClass: "offset-2",
   },
   {
     year: "1986",
@@ -51,6 +53,7 @@ const storyItems = [
             1985년 드디어 한국에서 배스킨라빈스를 만날 수 있게 되었습니다.`,
     img: "/images/story/brandhistory/img_item_3.jpg",
     iconPosition: "left",
+    offsetClass: "offset-3",
   },
   {
     year: "1960",
@@ -65,6 +68,7 @@ const storyItems = [
            등장 이래 현재까지 시장점유율 1위 자리를 유지 중입니다.`,
     img: "/images/story/brandhistory/img_item_4.jpg",
     iconPosition: "right",
+    offsetClass: "offset-4",
   },
 
   {
@@ -82,6 +86,7 @@ const storyItems = [
            미국 및 중동 국가에 역수출 하게 되었습니다.`,
     img: "/images/story/brandhistory/img_item_5.jpg",
     iconPosition: "left",
+    offsetClass: "offset-5",
   },
 
   {
@@ -99,6 +104,7 @@ const storyItems = [
           '배스킨라빈스31'도 대중들의 인식 속에 자리잡았습니다.`,
     img: "/images/story/brandhistory/img_item_6.jpg",
     iconPosition: "right",
+    offsetClass: "offset-6",
   },
 
   {
@@ -115,6 +121,7 @@ const storyItems = [
            여러 요거트 제품을 개발하는데 적용되었습니다.`,
     img: "/images/story/brandhistory/img_item_7.jpg",
     iconPosition: "left",
+    offsetClass: "offset-7",
   },
 
   {
@@ -133,6 +140,7 @@ const storyItems = [
            색다른 재미를 주며 호기심을 불러일으키고 있습니다.`,
     img: "/images/story/brandhistory/img_item_8.jpg",
     iconPosition: "right",
+    offsetClass: "offset-8",
   },
 
   {
@@ -140,7 +148,7 @@ const storyItems = [
     icon: "/images/story/brandhistory/img_logo_2005.png",
     icon2: "/images/story/brandhistory/bg_logo_story_year.png",
     // bgImage: "/images/story/brandstory/bg-1945.png",
-    title: "골라먹는 케이크 와츄원 출시, 국내 1000호점 오픈픈",
+    title: "골라먹는 케이크 와츄원 출시, 국내 1000호점 오픈",
     desc: `2011년 배스킨라빈스에서는 새로운 컨셉의 골라먹는
            아이스크림 케이크 ‘와츄원’을 출시했습니다.
            4~8가지의 맛을 하나의 케이크에 골라먹을 수 있도록 디자인 되었으며
@@ -150,6 +158,7 @@ const storyItems = [
            이에 2011년 배스킨라빈스는 국내 1,000호점을 돌파했습니다..`,
     img: "/images/story/brandhistory/img_item_9.jpg",
     iconPosition: "left",
+    offsetClass: "offset-9",
   },
 
   {
@@ -165,11 +174,12 @@ const storyItems = [
            현재는 1,400여개 점포에서 딜리버리를 제공 중이며
            배스킨라빈스의 해피오더 관련 매출은 초기 비해
            4배 이상 늘어났습니다.`,
-           img: "/images/story/brandhistory/img_item_10.jpg",
-           iconPosition: "right",
+    img: "/images/story/brandhistory/img_item_10.jpg",
+    iconPosition: "right",
+    offsetClass: "offset-10",
   },
 
-    {
+  {
     year: "2020",
     icon: "/images/story/brandhistory/img_logo_2005.png",
     icon2: "/images/story/brandhistory/bg_logo_story_year.png",
@@ -183,15 +193,16 @@ const storyItems = [
            ‘100 플레이버’를 오픈하였습니다.
            '100 플레이버' 매장은 파르나스몰점을 시작으로 최근 오픈한 스퀘어 강남점,
            강남대로점, 부산서면점 총 4곳에서 만나볼 수 있습니다.`,
-           img: "/images/story/brandhistory/img_item_11.jpg",
-           iconPosition: "left",
+    img: "/images/story/brandhistory/img_item_11.jpg",
+    iconPosition: "left",
+    offsetClass: "offset-11",
   },
 ];
 
 export default function BrandHistoryPage() {
   return (
     /** 브레드크럼 & 타이틀 */
-    <main className="bebetter-wrapper">
+    <main className="bebetter-wrapper1">
       <div className="breadcrumb">
         <span href="/story/history" className="breadcrumbbar active1">
           브랜드 스토리
