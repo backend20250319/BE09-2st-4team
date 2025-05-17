@@ -1,0 +1,13 @@
+.store-map__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 370px;
+  height: 100%;
+  border-style: solid;
+  border-color: #e0e2e3;
+  border-width: 1px 1px 1px 0;
+  background: #fff;
+  box-sizing: border-box;
+}
