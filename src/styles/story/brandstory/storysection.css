@@ -1,0 +1,108 @@
+/* 1. 전체 섹션 리스트: 수직 간격 정렬 */
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* 2. 각 아이템: 기본 왼쪽 아이콘 */
+.story-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 3. 오른쪽 아이콘일 경우 레이아웃 반전 */
+.story-item.right {
+  grid-template-columns: 1fr 200px;
+}
+.story-item.right .story-logo {
+  grid-column: 2;
+  top: 18.0rem;
+  justify-self: center;
+  align-self: center;
+}
+
+/* 4. 아이콘(로고 + 연도 원형) 공통 */
+.story-logo {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story-logo img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.story-logo .story-year {
+  position: absolute;
+  top: 5.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 6rem;
+  background-color: #f986bd;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* 5. 콘텐츠 박스 (텍스트 + 이미지) 공통 */
+.story-box {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 기본: 텍스트 | 썸네일 */
+  gap: 1.5rem;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* 6. 오른쪽 아이콘일 때: 썸네일 | 텍스트 */
+.story-item.right .story-box {
+  grid-template-columns: 2fr 3fr;
+}
+
+/* 텍스트/이미지 수직 정렬 */
+.story-text,
+.story-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 텍스트 정렬 */
+.story-text h4 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: #f986bd;
+}
+.story-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 이미지 썸네일 */
+.story-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
