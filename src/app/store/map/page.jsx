@@ -1,17 +1,18 @@
 "use client";
-import { useState, useContext, createContext } from "react";
+import { useState, useContext, createContext, useRef } from "react";
 import StoreMapForm from "@/components/store/map/StoreMapForm";
 import PageHeader from "@/components/store/PageHeader";
 import StoreList from "../../../components/store/map/StoreList";
-import KakaoMap from "@/components/store/map/KaKaoMap";
+import KakaoMap from "@/components/store/map/kakaoMap/KaKaoMap";
 
 export const StoreContext = createContext();
 
 function StoreProvider({ children }) {
   const [stores, setStores] = useState([]);
+  const mapRef = useRef(null);
 
   return (
-    <StoreContext.Provider value={{ stores, setStores }}>
+    <StoreContext.Provider value={{ stores, setStores, mapRef }}>
       {children}{" "}
     </StoreContext.Provider>
   );

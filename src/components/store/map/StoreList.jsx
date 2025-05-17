@@ -2,10 +2,11 @@
 
 import { useContext, useEffect } from "react";
 import { StoreContext } from "@/app/store/map/page";
+import { moveTo } from "./kakaoMap/KakaoMapUtil";
 import "@/styles/store/map/store-list.css";
 
 export default function StoreList() {
-  const { stores, setStores } = useContext(StoreContext);
+  const { stores, setStores, mapRef } = useContext(StoreContext);
 
   return (
     <div>
@@ -36,6 +37,9 @@ export default function StoreList() {
                   type="button"
                   data={store}
                   className="store-map-list__button"
+                  onClick={() => {
+                    moveTo(mapRef.current, store.latitude, store.longitude);
+                  }}
                 >
                   <div>
                     <h3 className="store-map-list__title">
