@@ -47,7 +47,10 @@ const IceCreamPage = () => {
       <div className="icecream-grid">
         {iceCreams.map((item, index) => (
           <div key={index} className="icecream-item">
-            <a href="#" className={`menu-card icecream${index}`}>
+            <a
+              href={`/menu/menuview?item=${encodeURIComponent(item.name)}`}
+              className={`menu-card icecream${index}`}
+            >
               <img
                 src={`/images/menu/icecream/${item.file}`}
                 alt={item.name}
