@@ -7,7 +7,7 @@ import { loadScript, initMap, drawMarkers } from "./KakaoMapUtil";
 
 export default function KakaoMap() {
   const markersRef = useRef([]);
-  const { stores, mapRef } = useContext(StoreContext);
+  const { stores, mapRef, customRef } = useContext(StoreContext);
   const [mapReady, setMapReady] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function KakaoMap() {
 
   useEffect(() => {
     if (mapReady) {
-      drawMarkers(mapRef.current, markersRef, stores);
+      drawMarkers(mapRef.current, markersRef, stores, customRef);
     }
   }, [mapReady, stores]);
 

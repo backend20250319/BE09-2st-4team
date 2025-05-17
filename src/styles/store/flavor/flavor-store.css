@@ -9,6 +9,14 @@
   z-index: 1;
 }
 
+.page-tab:before {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  content: "";
+}
 .page-tab__list {
   display: flex;
   justify-content: center;

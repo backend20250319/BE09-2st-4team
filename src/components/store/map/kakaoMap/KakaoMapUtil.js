@@ -26,14 +26,12 @@ export const initMap = (mapRef, setMapReady) => {
   setMapReady(true);
 };
 
-let customOverlay = null;
-
-export const drawMarkers = (map, markersRef, storeList) => {
+export const drawMarkers = (map, markersRef, storeList, customRef) => {
   markersRef.current.forEach((marker) => marker.setMap(null));
   markersRef.current = []; // 이전 마커들을 배열에서 제거
 
-  if (customOverlay) {
-    customOverlay.setMap(null);
+  if (customRef.current) {
+    customRef.current.setMap(null);
   }
 
   if (storeList.length === 0) {
@@ -42,7 +40,7 @@ export const drawMarkers = (map, markersRef, storeList) => {
 
   moveTo(map, storeList[0].latitude, storeList[0].longitude);
 
-  storeList.forEach((store) => {
+  storeList.forEach((store, index) => {
     const position = new window.kakao.maps.LatLng(
       store.latitude,
       store.longitude
@@ -50,6 +48,7 @@ export const drawMarkers = (map, markersRef, storeList) => {
     const marker = new window.kakao.maps.Marker({
       position,
       title: store.store_name,
+      id: index,
     });
 
     //이미지 지정
@@ -74,34 +73,34 @@ export const drawMarkers = (map, markersRef, storeList) => {
     window.kakao.maps.event.addListener(marker, "click", function () {
       moveTo(map, store.latitude, store.longitude);
 
-      if (customOverlay) {
-        customOverlay.setMap(null);
+      if (customRef.current) {
+        customRef.current.setMap(null);
       }
 
       const overlayContent = InfoWindow(store); // HTML 문자열 반환해야 함
 
       // 새 오버레이 생성
-      customOverlay = new window.kakao.maps.CustomOverlay({
+      customRef.current = new window.kakao.maps.CustomOverlay({
         content: overlayContent,
         position: marker.getPosition(),
         xAnchor: 0.5,
         yAnchor: 1,
       });
 
-      customOverlay.setMap(map);
+      customRef.current.setMap(map);
 
       const closeButton = document.getElementById("closeButton");
       if (closeButton) {
         closeButton.addEventListener("click", function () {
-          customOverlay.setMap(null);
+          customRef.current.setMap(null);
         });
       }
     });
 
     // 지도 클릭 시 오버레이 닫기
     window.kakao.maps.event.addListener(map, "click", function () {
-      if (customOverlay) {
-        customOverlay.setMap(null);
+      if (customRef.current) {
+        customRef.current.setMap(null);
       }
     });
 
@@ -115,4 +114,20 @@ export const moveTo = (map, lat, lng) => {
 
   const newPos = new window.kakao.maps.LatLng(lat, lng);
   map.panTo(newPos); // 혹은 map.setCenter(newPos);
+};
+
+export const onStoreClick = (mapRef, customRef, store) => {
+  if (customRef.current) {
+    customRef.current.setMap(null);
+  }
+
+  const overlayContent = InfoWindow(store); // HTML 문자열 반환
+  customRef.current = new window.kakao.maps.CustomOverlay({
+    content: overlayContent,
+    position: new window.kakao.maps.LatLng(store.latitude, store.longitude),
+    xAnchor: 0.5,
+    yAnchor: 1,
+  });
+
+  customRef.current.setMap(mapRef);
 };

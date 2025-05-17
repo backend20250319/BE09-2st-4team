@@ -10,9 +10,10 @@ export const StoreContext = createContext();
 function StoreProvider({ children }) {
   const [stores, setStores] = useState([]);
   const mapRef = useRef(null);
+  const customRef = useRef(null);
 
   return (
-    <StoreContext.Provider value={{ stores, setStores, mapRef }}>
+    <StoreContext.Provider value={{ stores, setStores, mapRef, customRef }}>
       {children}{" "}
     </StoreContext.Provider>
   );
