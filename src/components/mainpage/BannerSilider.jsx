@@ -49,10 +49,6 @@ export default function BannerSlider() {
       setPopupsHidden(false);
       setButtonMoved(false); // 버튼을 원래 위치로
     }
-    // setVisible(!visible);
-    // if (!visible) {
-    //   setAnimationComplete(false);
-    // }
   };
 
   return (
@@ -117,12 +113,6 @@ export default function BannerSlider() {
                       : buttonMoved && !popupsHidden
                       ? `${(popups.length - 1) * 0.4}s`
                       : "0s",
-                  // ? `${(popups.length - 1) * 0.2}s` // 복원할 때도 마지막 팝업과 동시
-                  // : `${(popups.length - 1) * 0.2}s`, // 클릭해서 사라질 때도 마지막 팝업과 동시
-                  //   : "translateX(0) rotate(0)",
-                  // transitionDelay: visible
-                  //   ? `${popups.length * 0.2}s`
-                  //   : "0s",
                 }}
               >
                 <img
