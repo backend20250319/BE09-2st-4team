@@ -1,22 +1,24 @@
 "use client";
 import React, { useState } from "react";
-import Tabs from "../br_play/Tabs"; // ✅ 정확한 경로
+import Tabs from "../br_play/Tabs";
 import styles from "./plazaPage.module.css";
 
-// ✅ 탭 항목
+// 탭 항목
 const tabs = [
   { key: "all", label: "ALL" },
   { key: "new", label: "NEW" },
   { key: "collabo", label: "COLLABO" },
 ];
 
-// ✅ 상단 카드
+// 상단 카드
 const topCards = [
   {
     bgColor: "#f9d6dd",
     titleSmall: "내가 만드는 맛이 31가지 아이스크림이 된다고?",
     titleMain: "내가 만드는 아이스크림",
     button1: "만들어주세요",
+    externalLink:
+      "https://www.baskinrobbins.co.kr/login/login.php?returnURL=%2Fplay%2Fplaza%2Fnew.php",
   },
   {
     bgColor: "#f4dfc5",
@@ -33,7 +35,7 @@ const topCards = [
   },
 ];
 
-// ✅ 카드 데이터 (각 항목에 type 추가 필요!)
+// 카드 데이터
 const cardsData = [
   {
     id: 1,
@@ -148,12 +150,23 @@ const Card = ({ bgColor, titleSmall, titleMain, button1, button2 }) => (
 
 export default function PlazaPage() {
   const [activeTab, setActiveTab] = useState("all");
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // ✅ 탭 필터링 적용
   const filteredCards =
     activeTab === "all"
       ? cardsData
       : cardsData.filter((card) => card.type === activeTab);
+
+  const handleCardClick = (card) => {
+    setSelectedCard(card);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedCard(null);
+    setIsModalOpen(false);
+  };
 
   return (
     <div className={styles.container}>
@@ -172,36 +185,53 @@ export default function PlazaPage() {
         ))}
       </div>
 
-      {/* ✅ 탭 영역 추가 */}
+      {/* 탭 */}
       <div className="tabs-wrapper">
         <Tabs tabs={tabs} active={activeTab} onChange={setActiveTab} />
       </div>
 
-      {/* 필터링된 카드 리스트 */}
+      {/* 카드 리스트 */}
       <div className={styles.cardGrid}>
-        {filteredCards.map(({ id, title, content, author, externalLink }) => (
-          <div key={id} className={styles.card}>
+        {filteredCards.map((card) => (
+          <div key={card.id} className={styles.card}>
             <div className={styles.cardNewBadge}>NEW</div>
-            <h3 className={styles.cardTitle}>{title}</h3>
-            <p className={styles.cardContent} title={content}>
-              {content}
+            <h3 className={styles.cardTitle}>{card.title}</h3>
+            <p className={styles.cardContent} title={card.content}>
+              {card.content}
             </p>
-            <p className={styles.cardAuthor}>{author}</p>
-            {externalLink ? (
-              <a
-                href={externalLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.cardButton}
-              >
-                자세히 보기
-              </a>
-            ) : (
-              <button className={styles.cardButton}>자세히 보기</button>
-            )}
+            <p className={styles.cardAuthor}>{card.author}</p>
+            <button
+              className={styles.cardButton}
+              onClick={() => handleCardClick(card)}
+            >
+              자세히 보기
+            </button>
           </div>
         ))}
       </div>
+
+      {/* 모달 */}
+      {isModalOpen && selectedCard && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modal}>
+            <h2>{selectedCard.title}</h2>
+            <p>{selectedCard.content}</p>
+            <p>{selectedCard.author}</p>
+            <a
+              href={selectedCard.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#ff6086" }}
+            >
+              배라 사이트로 이동하기 →
+            </a>
+            <br />
+            <button onClick={closeModal} style={{ marginTop: "20px" }}>
+              닫기
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

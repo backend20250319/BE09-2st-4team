@@ -12,8 +12,6 @@ const eventData = [
     date: "2025-05-15 ~ 2025-05-20",
     badge: "D-01",
     img: "/images/promotion/id22.png",
-    externalLink:
-      "https://www.baskinrobbins.co.kr/play/event/view.php?seq=345&category=ALL",
   },
   {
     id: 1,
@@ -22,8 +20,6 @@ const eventData = [
     badge: "D-01",
     date: "2025-05-14 ~ 2025-05-20",
     img: "/images/promotion/id1.png",
-    externalLink:
-      "https://www.baskinrobbins.co.kr/play/event/view.php?seq=341&category=ALL",
   },
   {
     id: 2,
@@ -122,6 +118,57 @@ const eventData = [
     type: "benefit",
     date: "상시 운영",
     img: "/images/promotion/id14.png",
+  },
+  {
+    id: 15,
+    title: "T 우주패스 구독 혜택 (모바일교환권)",
+    type: "promotion",
+    badge: "D-257",
+    date: "2025-03-01 ~ 2026-01-31",
+    img: "/images/promotion/id15.png",
+  },
+  {
+    id: 16,
+    title: "LG U+ 구독 혜택 (모바일교환권)",
+    type: "benefit",
+    badge: "D-257",
+    date: "2025-03-01 ~ 2026-01-31",
+    img: "/images/promotion/id16.png",
+  },
+  {
+    id: 17,
+    title: "삼성카드 보너스포인트 100% 사용",
+    type: "benefit",
+    date: "상시 운영",
+    img: "/images/promotion/id17.png",
+  },
+  {
+    id: 18,
+    title: "이제 배라에서도 애플페이",
+    type: "benefit",
+    date: "상시 운영",
+    img: "/images/promotion/id18.png",
+  },
+  {
+    id: 19,
+    title: "해피앱에서 5% 적립 놓치지 마세요!",
+    type: "benefit",
+    date: "상시 운영",
+    img: "/images/promotion/id19.png",
+  },
+  {
+    id: 20,
+    title: "현대카드 M포인트 50% 사용",
+    type: "benefit",
+    date: "상시 운영",
+    img: "/images/promotion/id20.png",
+  },
+  {
+    id: 21,
+    title: "1회용 컵 사용 줄이기 안내",
+    type: "promotion",
+    date: "상시 운영",
+    img: "/images/promotion/id21.png",
   },
 ];
 

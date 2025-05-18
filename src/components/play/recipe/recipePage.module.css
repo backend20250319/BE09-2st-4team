@@ -24,43 +24,17 @@
   line-height: 1.4;
 }
 
+/* ✅ Tabs 외부 여백 적용 */
 .tabsWrapper {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
   margin-bottom: 40px;
-  user-select: none;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.tabButton {
-  border: 1px solid #ddd6d0;
-  border-bottom: 2px solid transparent;
-  background: none;
-  padding: 12px 24px;
-  font-size: 14px;
-  font-weight: 700;
-  cursor: pointer;
-  color: #aaa;
-  border-radius: 8px 8px 0 0;
-  transition: all 0.25s ease;
-}
-
-.tabButton:hover {
-  background-color: #f9f9f9;
-}
-
-.active {
-  border-color: #f08fbf;
-  border-bottom-color: #fff;
-  color: #2e2c2c;
-  font-weight: 900;
-  background-color: #fff;
-  cursor: default;
-}
+/* Tabs 내부에서 사용하는 버튼 스타일은 Tabs.module.css에서 관리 */
 
 .recipeGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40px, 4fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
   gap: 28px;
   margin-bottom: 60px;
 }
@@ -150,4 +124,10 @@
   border-color: #f08fbf;
   color: white;
   cursor: default;
+}
+
+.cardLink {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 텍스트 색상 유지 */
+  display: block;
 }
