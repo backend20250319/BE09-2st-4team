@@ -1,24 +1,29 @@
-/* src/components/EventPage.jsx */
+// src/components/play/br_play/EventPage.jsx
 "use client";
 import React, { useState } from "react";
 import Tabs from "./Tabs.jsx";
 import EventList from "./EventList.jsx";
-// 예시: 실제 public 폴더 파일명을 img 경로로 지정
+
 const eventData = [
   {
     id: 22,
     title: "그레이맛 콘테스트 1차 투표! TOP7을 뽑아주세요!",
     type: "promotion",
-    date: "2025-05-15 ~ 2025-05-18",
-    badge: "D-03",
+    date: "2025-05-15 ~ 2025-05-20",
+    badge: "D-01",
     img: "/images/promotion/id22.png",
+    externalLink:
+      "https://www.baskinrobbins.co.kr/play/event/view.php?seq=345&category=ALL",
   },
   {
     id: 1,
     title: "우석이 디지털 굿즈 2차",
-    type: "online",
+    type: "promotion",
+    badge: "D-01",
     date: "2025-05-14 ~ 2025-05-20",
     img: "/images/promotion/id1.png",
+    externalLink:
+      "https://www.baskinrobbins.co.kr/play/event/view.php?seq=341&category=ALL",
   },
   {
     id: 2,
@@ -31,7 +36,8 @@ const eventData = [
     id: 3,
     title: "해피포인트 페스티벌 최대 50% OFF!",
     type: "promotion",
-    date: "2025-05-14 ~ 2025-05-18",
+    badge: "D-02",
+    date: "2025-05-14 ~ 2025-05-21",
     img: "/images/promotion/id3.png",
   },
   {
@@ -46,6 +52,7 @@ const eventData = [
     id: 5,
     title: "우석이와 배라타임, 변우석 등신대 인증샷 이벤트",
     type: "promotion",
+    badge: "D-12",
     date: "2025-05-03 ~ 2025-05-31",
     img: "/images/promotion/id5.png",
   },
@@ -53,6 +60,7 @@ const eventData = [
     id: 6,
     title: "해피아워, 2-5시 싱글레귤러 1+1",
     type: "benefit",
+    badge: "D-12",
     date: "2025-05-01 ~ 2025-05-31",
     img: "/images/promotion/id6.png",
   },
@@ -67,6 +75,7 @@ const eventData = [
     id: 8,
     title: "5월 이달의 맛, 인스타그램에 사진을 올려주세요!",
     type: "promotion",
+    badge: "D-07",
     date: "2025-05-01 ~ 2025-05-26",
     img: "/images/promotion/id8.png",
   },
@@ -74,13 +83,14 @@ const eventData = [
     id: 9,
     title: "삼성카드 LINK 연결 후, 2만원 이상 결제 시 2천원 OFF",
     type: "benefit",
-    date: "2025-05-01 ~ 2025-05-31",
+    date: "2025-05-01 ~ 소진 시 까지",
     img: "/images/promotion/id9.png",
   },
   {
     id: 10,
     title: "T 우주패스 구독하면 배스킨라빈스 3,000원 교환권 추가 혜택!",
     type: "promotion",
+    badge: "D-42",
     date: "2025-04-23 ~ 2025-06-30",
     img: "/images/promotion/id10.png",
   },
@@ -88,6 +98,7 @@ const eventData = [
     id: 11,
     title: "워크샵 by 배스킨라빈스 그랜드 오픈",
     type: "promotion",
+    badge: "D-12",
     date: "2025-05-01 ~ 2025-05-31",
     img: "/images/promotion/id11.png",
   },
@@ -112,66 +123,21 @@ const eventData = [
     date: "상시 운영",
     img: "/images/promotion/id14.png",
   },
-  {
-    id: 15,
-    title: "T 우주패스 구독 혜택 (모바일교환권)",
-    type: "promotion",
-    date: "2025-03-01 ~ 2026-01-31",
-    img: "/images/promotion/id15.png",
-  },
-  {
-    id: 16,
-    title: "LG U+ 구독 혜택 (모바일교환권)",
-    type: "benefit",
-    date: "2025-03-01 ~ 2026-01-31",
-    img: "/images/promotion/id16.png",
-  },
-  {
-    id: 17,
-    title: "삼성카드 보너스포인트 100% 사용",
-    type: "benefit",
-    date: "상시 운영",
-    img: "/images/promotion/id17.png",
-  },
-  {
-    id: 18,
-    title: "이제 배라에서도 애플페이",
-    type: "benefit",
-    date: "상시 운영",
-    img: "/images/promotion/id18.png",
-  },
-  {
-    id: 19,
-    title: "해피앱에서 5% 적립 놓치지 마세요!",
-    type: "benefit",
-    date: "상시 운영",
-    img: "/images/promotion/id19.png",
-  },
-  {
-    id: 20,
-    title: "현대카드 M포인트 50% 사용",
-    type: "benefit",
-    date: "상시 운영",
-    img: "/images/promotion/id20.png",
-  },
-  {
-    id: 21,
-    title: "1회용 컵 사용 줄이기 안내",
-    type: "promotion",
-    date: "상시 운영",
-    img: "/images/promotion/id21.png",
-  },
 ];
+
 const tabs = [
   { key: "all", label: "전체" },
   { key: "promotion", label: "프로모션" },
   { key: "benefit", label: "제휴혜택" },
 ];
+
 export default function EventPage() {
   const [activeTab, setActiveTab] = useState("all");
+
   const filtered = eventData.filter(
     (e) => activeTab === "all" || e.type === activeTab
   );
+
   return (
     <>
       <h1 className="title-main">Event</h1>
@@ -184,6 +150,7 @@ export default function EventPage() {
       <div className="tabs-wrapper">
         <Tabs tabs={tabs} active={activeTab} onChange={setActiveTab} />
       </div>
+
       <div className="grid">
         <EventList events={filtered} />
       </div>
