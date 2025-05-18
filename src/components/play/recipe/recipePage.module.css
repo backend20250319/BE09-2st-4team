@@ -35,7 +35,7 @@
 .recipeGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
-  gap: 28px;
+  gap: 30px;
   margin-bottom: 60px;
 }
 
@@ -130,4 +130,59 @@
   text-decoration: none; /* 밑줄 제거 */
   color: inherit; /* 텍스트 색상 유지 */
   display: block;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 배치 */
+  gap: 32px;
+}
+
+.recipeCard {
+  display: flex;
+  border: 1px solid #ddd6d0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  min-height: 180px; /* ✅ 높이 조정 */
+}
+
+.recipeCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.recipeImage {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recipeText {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.categoryLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b88d4a;
+  margin-bottom: 6px;
+}
+
+.recipeTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin-bottom: 6px;
+}
+
+.recipeSubTitle {
+  font-size: 15px;
+  color: #555;
 }

@@ -76,7 +76,7 @@ body {
 
 .tabs-wrapper {
   border-bottom: 1px solid #ddd;
-    margin-bottom: 60px; /* ✅ 탭 아래 간격 확보 */
+  margin-bottom: 60px; /* ✅ 탭 아래 간격 확보 */
 }
 
 .tabs {
@@ -296,3 +296,8 @@ ul.event-list-list__list {
   background-color: #fff;
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px 100px;
+}
