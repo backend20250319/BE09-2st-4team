@@ -1,8 +1,8 @@
-import IceCreamPage from "@/components/menu/icecreampage";
+import IceCream from "@/components/menu/icecreampage";
 import React from "react";
 
 const MenuPage = () => {
-  return <IceCreamPage />;
+  return <IceCream />;
 };
 
 export default MenuPage;

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "@/styles/menu/icecreampage.css";
+import Link from "next/link";
 
 const iceCreams = [
   {
@@ -47,8 +48,8 @@ const IceCreamPage = () => {
       <div className="icecream-grid">
         {iceCreams.map((item, index) => (
           <div key={index} className="icecream-item">
-            <a
-              href={`/menu/menuview?item=${encodeURIComponent(item.name)}`}
+            <Link
+              href={`/menu/menuview${index}`}
               className={`menu-card icecream${index}`}
             >
               <img
@@ -60,9 +61,8 @@ const IceCreamPage = () => {
                 <div className="icecream-ribbon">{item.label}</div>
               )}
               <span className="menu-card__hash">{item.tags}</span>
-            </a>
-            <p className="icecream-name">{item.name}</p>{" "}
-            {/* 카드 외부로 분리된 이름 */}
+            </Link>
+            <p className="icecream-name">{item.name}</p>
           </div>
         ))}
       </div>

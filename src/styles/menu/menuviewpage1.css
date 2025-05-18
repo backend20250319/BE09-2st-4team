@@ -1,4 +1,4 @@
-.menuview-wrapper {
+.menuview-wrapper1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,59 +7,63 @@
   flex-wrap: wrap;
 }
 
-.menuview-image {
-  background-color: #ef798a;
+.menuview-image1 {
+  background-color: #874d3d;
   border-radius: 200px 200px 0 0;
   padding: 30px;
 }
 
-.menuview-content {
+.menuview-content1 {
   max-width: 500px;
 }
 
-.menuview-category {
+.menuview-category1 {
   color: #f596a6;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
-.menuview-title-en {
+.menuview-title-en1 {
+  color: #874d3d;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 6px;
   text-transform: uppercase;
 }
 
-.menuview-title-kr {
+.menuview-title-kr1 {
+  color: #874d3d;
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 16px;
 }
 
-.menuview-desc {
+.menuview-desc1 {
+  color: #874d3d;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 24px;
 }
 
-.menuview-icons {
+.menuview-icons1 {
   display: flex;
   gap: 20px;
 }
 
-.ingredient {
+.ingredient1 {
+  color: #874d3d;
   text-align: center;
   font-size: 14px;
 }
 
-.icecream-stack {
+.icecream-stack1 {
   position: relative;
   width: 300px;
   height: 400px;
 }
 
-.cone-img {
+.cone-img1 {
   position: absolute;
   bottom: -30px;
   left: 50%;
@@ -68,7 +72,7 @@
   z-index: 1;
 }
 
-.icecream-img {
+.icecream-img1 {
   position: absolute;
   bottom: 50px;
   left: 50%;
@@ -77,20 +81,20 @@
   z-index: 2;
 }
 
-.nutrition-info {
+.nutrition-info1 {
   border-top: 1px solid #ccc;
   margin-top: 60px;
   padding-top: 30px;
 }
 
-.nutrition-title {
+.nutrition-title1 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.nutrition-table {
+.nutrition-table1 {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -98,102 +102,101 @@
   text-align: center;
 }
 
-.nutrition-item p {
+.nutrition-item1 p {
   font-size: 14px;
   color: #333;
   margin-bottom: 4px;
 }
 
-.nutrition-item strong {
+.nutrition-item1 strong {
   font-size: 16px;
   color: #e64572;
   font-weight: 600;
 }
 
-.poster {
+.poster1 {
   margin-top: 60px;
   text-align: center;
 }
 
-.poster-image {
+.poster-image1 {
   width: 500px;
   max-width: 90%;
   height: auto;
 }
 
-.size-section {
+.size-section1 {
   padding-bottom: 40px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 60px;
 }
 
-.size-title {
+.size-title1 {
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 40px;
   color: #3b3b3b;
 }
 
-.size-category {
+.size-category1 {
   margin-bottom: 60px;
 }
 
-.size-subtitle {
+.size-subtitle1 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
 
-.size-grid {
+.size-grid1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.size-item {
+.size-item1 {
   width: 140px;
 }
 
-.size-item img {
+.size-item1 img {
   width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.size-name {
+.size-name1 {
   font-weight: 600;
   margin-bottom: 4px;
 }
 
-.size-desc {
+.size-desc1 {
   font-size: 14px;
   color: #888;
   margin-bottom: 4px;
 }
 
-.size-price {
+.size-price1 {
   font-size: 16px;
   font-weight: bold;
   color: #e64572;
 }
 
-.size-note {
+.size-note1 {
   font-size: 13px;
   color: #888;
   margin-top: 10px;
 }
 
-.menuview-bottom {
+.menuview-bottom1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* 섹션 전체를 왼쪽 정렬로 */
-.recommend-section {
+.recommend-section1 {
   padding-top: 40px;
   margin-top: 60px;
   text-align: left;
@@ -203,27 +206,25 @@
   box-sizing: border-box;
 }
 
-/* 제목 영역 */
-.recommend-header {
+.recommend-header1 {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 }
 
-.recommend-title {
+.recommend-title1 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
-.recommend-sub {
+.recommend-sub1 {
   font-size: 14px;
   color: #f8a6b6;
 }
 
-/* 추천 박스 정렬 */
-.recommend-box {
+.recommend-box1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,36 +236,116 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.recommend-text {
+.recommend-text1 {
   flex: 1;
 }
 
-.recommend-line {
+.recommend-line1 {
   font-size: 13px;
   color: #000;
   margin: 0;
 }
 
-.recommend-main {
+.recommend-main-title1 {
   font-size: 18px;
   font-weight: bold;
   color: #333;
   margin-top: 10px;
 }
 
-.recommend-main .arrow {
+.recommend-title1 .arrow1 {
   font-size: 22px;
   font-weight: normal;
   margin-left: 8px;
 }
 
-.recommend-image img {
+.recommend-img1 {
   width: 100px;
   height: auto;
 }
 
-.recommend-box-link {
+.recommend-box-link1 {
   text-decoration: none;
   display: block;
   width: fit-content;
+}
+
+.side-preview-container1 {
+  position: fixed;
+  top: 25%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.side-preview-text1 {
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5e3a2f;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  text-decoration: none;
+}
+
+.side-preview-text1 .arrow1 {
+  margin-left: 4px;
+  font-size: 18px;
+}
+
+.side-preview-wrapper1 {
+  width: 160px;
+  height: 360px;
+  background-color: #ffe679;
+  border-top-left-radius: 180px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: -50px;
+}
+
+.side-preview-image1 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 140px;
+  height: 180px;
+  transform: translateY(-50%);
+  overflow: visible;
+}
+
+.side-preview-image1 img {
+  width: 100%;
+  height: auto;
+  transform: translateX(-10%);
+}
+
+.side-preview-container1.left {
+  left: -40px;
+  right: auto;
+  flex-direction: row;
+}
+
+.side-preview-container1.left .side-preview-wrapper1 {
+  background-color: #ef798a;
+  border-top-left-radius: 0;
+  border-top-right-radius: 180px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.side-preview-container1.left .side-preview-text1 {
+  margin-left: 50px;
+  margin-right: 0;
+}
+
+.side-preview-container1.left .arrow1 {
+  transform: none; /* 기본 왼쪽 방향 유지 */
 }

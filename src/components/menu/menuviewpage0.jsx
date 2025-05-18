@@ -2,7 +2,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import "@/styles/menu/menuviewpage.css";
+import "@/styles/menu/menuviewpage0.css";
 import Link from "next/link";
 
 const MenuView = () => {
@@ -12,7 +12,7 @@ const MenuView = () => {
         {/* 아이스크림 + 콘 겹치기 구조 */}
         <div className="icecream-stack">
           <img
-            src="/images/menu/menuview/cone.png"
+            src="/images/menu/menuview/icon_size/cone.png"
             alt="콘"
             className="cone-img"
           />
@@ -38,7 +38,7 @@ const MenuView = () => {
         <div className="menuview-icons">
           <div className="ingredient">
             <Image
-              src="/images/menu/menuview/strawberry.png"
+              src="/images/menu/menuview/icecream1/strawberry.png"
               alt="딸기"
               width={40}
               height={40}
@@ -47,7 +47,7 @@ const MenuView = () => {
           </div>
           <div className="ingredient">
             <Image
-              src="/images/menu/menuview/banana.png"
+              src="/images/menu/menuview/icecream1/banana.png"
               alt="바나나"
               width={40}
               height={40}
@@ -56,7 +56,7 @@ const MenuView = () => {
           </div>
           <div className="ingredient">
             <Image
-              src="/images/menu/menuview/gummybear.png"
+              src="/images/menu/menuview/icecream1/gummybear.png"
               alt="곰 젤리"
               width={40}
               height={40}
@@ -103,7 +103,7 @@ const MenuView = () => {
           {/* 포스터 */}
           <div className="poster">
             <img
-              src="/images/menu/menuview/poster.png"
+              src="/images/menu/menuview/icecream1/poster.png"
               alt="포스터"
               className="poster-image"
             />
@@ -119,7 +119,7 @@ const MenuView = () => {
             <div className="size-grid">
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_c_1.png"
+                  src="/images/menu/menuview/icon_size/icon_size_c_1.png"
                   alt="싱글레귤러"
                 />
                 <p className="size-name">싱글레귤러</p>
@@ -128,7 +128,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_c_2.png"
+                  src="/images/menu/menuview/icon_size/icon_size_c_2.png"
                   alt="싱글킹"
                 />
                 <p className="size-name">싱글킹</p>
@@ -137,7 +137,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_c_3.png"
+                  src="/images/menu/menuview/icon_size/icon_size_c_3.png"
                   alt="더블주니어"
                 />
                 <p className="size-name">더블주니어</p>
@@ -146,7 +146,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_c_4.png"
+                  src="/images/menu/menuview/icon_size/icon_size_c_4.png"
                   alt="더블레귤러"
                 />
                 <p className="size-name">더블레귤러</p>
@@ -161,7 +161,7 @@ const MenuView = () => {
             <div className="size-grid">
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_hp_1.png"
+                  src="/images/menu/menuview/icon_size/icon_size_hp_1.png"
                   alt="파인트"
                 />
                 <p className="size-name">파인트</p>
@@ -170,7 +170,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_hp_2.png"
+                  src="/images/menu/menuview/icon_size/icon_size_hp_2.png"
                   alt="쿼터"
                 />
                 <p className="size-name">쿼터</p>
@@ -179,7 +179,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_hp_3.png"
+                  src="/images/menu/menuview/icon_size/icon_size_hp_3.png"
                   alt="패밀리"
                 />
                 <p className="size-name">패밀리</p>
@@ -188,7 +188,7 @@ const MenuView = () => {
               </div>
               <div className="size-item">
                 <img
-                  src="/images/menu/menuview/icon_size_hp_4.png"
+                  src="/images/menu/menuview/icon_size/icon_size_hp_4.png"
                   alt="하프갤론"
                 />
                 <p className="size-name">하프갤론</p>
@@ -224,12 +224,26 @@ const MenuView = () => {
                 </p>
               </div>
               <img
-                src="/images/menu/menuview/icon_mixture_default.png"
+                src="/images/menu/menuview/icon_size/icon_mixture_default.png"
                 alt="마이 플레이버리스트"
                 className="recommend-img"
               />
             </div>
           </Link>
+        </div>
+
+        <div className="side-preview-container">
+          <Link href="/menu/menuview1" className="side-preview-text">
+            아이 원-츄! <span className="arrow">›</span>
+          </Link>
+          <div className="side-preview-wrapper">
+            <div className="side-preview-image">
+              <img
+                src="/images/menu/icecream/icecream-2.png"
+                alt="사이드 아이스크림"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
