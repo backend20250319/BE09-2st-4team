@@ -12,18 +12,20 @@ export default function PromotionSection() {
   const swiperRef = useRef(null);
 
   const allPromotions = [
-    { id: 1, image: "/images/main/promo1.png" },
-    { id: 2, image: "/images/main/promo2.png" },
-    { id: 3, image: "/images/main/promo3.png" },
-    { id: 4, image: "/images/main/promo4.png" },
-    { id: 5, image: "/images/main/promo5.png" },
-    { id: 6, image: "/images/main/promo6.png" },
-    { id: 7, image: "/images/main/promo7.png" },
-    { id: 8, image: "/images/main/promo8.png" },
-    { id: 9, image: "/images/main/promo9.png" },
-    { id: 10, image: "/images/main/promo10.png" },
-    { id: 11, image: "/images/main/promo11.png" },
-    { id: 12, image: "/images/main/promo12.png" },
+    { id: 1, image: "/images/main/promo1.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=345" },
+    { id: 2, image: "/images/main/promo2.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=343" },
+    { id: 3, image: "/images/main/promo3.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=341" },
+    { id: 4, image: "/images/main/promo4.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=342" },
+    { id: 5, image: "/images/main/promo5.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=340" },
+
+    { id: 6, image: "/images/main/promo6.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=334" },
+    { id: 7, image: "/images/main/promo7.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=330" },
+    { id: 8, image: "/images/main/promo8.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=332" },
+    { id: 9, image: "/images/main/promo9.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=335" },
+    { id: 10, image: "/images/main/promo10.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=331" },
+
+    { id: 11, image: "/images/main/promo11.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=99" },
+    { id: 12, image: "/images/main/promo12.png", link: "https://www.baskinrobbins.co.kr/play/event/view.php?seq=2" },
   ];
 
   // 슬라이드별 데이터 구성
@@ -42,33 +44,38 @@ export default function PromotionSection() {
     "2025-05-14 ~ 2025-05-20",
     "2025-05-01 ~ 소진 시 까지",
     "2025-05-14 ~ 2025-05-18",
-    "2025-05-20 ~ 2025-05-25",
-    "2025-05-18 ~ 2025-05-24",
-    "2025-05-16 ~ 2025-05-22",
-    "2025-05-19 ~ 2025-05-30",
-    "2025-05-15 ~ 소진 시 까지",
-    "2025-05-22 ~ 2025-05-28",
-    "2025-05-20 ~ 2025-05-26",
+
+    "2025-05-01 ~ 2025-05-31",
+    "2025-05-03 ~ 2025-05-31",
+    "2025-04-23 ~ 소진 시 까지",
+    "2025-05-01 ~ 2025-05-26",
+    "2025-04-23 ~ 2025-06-30",
+
+    "상시운영",
+    "상시운영",
   ];
-  
+
   const promo_text = [
     "그래이맛 콘테스트 1차 투표! TOP7을 뽑아주세요!",
     "젤리곰 무드등 세트 사전예약 시 2천원 할인!",
     "우석이 디지털 굿즈 2차",
     "해피볼 티니핑 프린세스 랜덤 피규어",
     "해피포인트 페스티벌 최대 50% OFF!",
-    "신상품 출시 기념 특가 이벤트",
-    "멤버십 회원 전용 할인 혜택",
-    "여름 시즌 한정 콜라보 상품",
-    "포인트 적립 2배 이벤트",
-    "친구 추천하고 쿠폰 받기",
-    "생일 축하 스페셜 기프트",
-    "월말 정산 세일 최대 70% 할인",
+
+    "5월 이달의 더블주니어! 이달의 맛 선택시,\n500원 추가하면 싱글레귤러를 더블주니어로\n더블업!",
+    "우석이와 배라타임, 변우석 등신대 인증샷\n이벤트",
+    "쿼터 이상 구매 시, 한정판 딜리백 4,900원",
+    "5월 이달의 맛, 인스타그램에 사진을\n올려주세요!",
+    "T 우주패스 구독하면 배스킨라빈스 3,000원\n교환권 추가 혜택!",
+
+    "워크샵 by 배스킨라빈스 그랜드 오픈",
+    "1회용 컵 사용 줄이기 안내",
   ];
 
-  const handleCardClick = (promoId) => {
-    // 각 카드별 링크 처리
-    window.open(`/promotion/${promoId}`, "_blank");
+  const handleCardClick = (promo) => {
+    // 각 카드별 배스킨라빈스 실제 프로모션 페이지로 연결
+    window.open(promo.link, '_blank');
+    // window.open(`/promotion/${promoId}`, "_blank");
   };
 
   return (
@@ -111,7 +118,7 @@ export default function PromotionSection() {
                         <div
                           key={promo.id}
                           className="promotion-card"
-                          onClick={() => handleCardClick(promo.id)}
+                          onClick={() => handleCardClick(promo)}
                         >
                           <div className="promotion-image">
                             <img
