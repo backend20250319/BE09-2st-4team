@@ -1,0 +1,233 @@
+dd,
+dt,
+dl {
+  margin: 0;
+  padding: 0;
+}
+.store-catering {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.store-catering__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.store-catering__content {
+  margin-top: 70px;
+}
+
+.store-catering-info {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.store-catering-info__title {
+  padding: 95px 0 40px;
+  border-top: 1px solid #c6c1bf;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+.store-catering__button {
+  text-align: center;
+}
+
+.store-catering__button a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  padding: 0 70px 0 35px;
+  border-radius: 30px;
+  background: #ff4d72 url(/images/store/catering/icon_arrow.png) no-repeat right
+    35px center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.store-catering__text {
+  margin-top: 10px;
+  color: #3f312e;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.store-catering-info__list {
+  margin-top: 60px;
+}
+
+.store-catering-info__item {
+  display: flex;
+  border: 1px solid #d4cdc0;
+  border-radius: 10px;
+}
+
+.store-catering-info__visual {
+  display: block;
+  width: 500px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.store-catering-info__item > div {
+  width: 500px;
+}
+
+.store-catering-info__item--title {
+  margin: 40px 0 24px;
+  color: #41332c;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.store-catering-info__item--title span {
+  display: block;
+  margin-bottom: 12px;
+  color: #c1bbaf;
+  font-size: 13px;
+}
+
+.store-catering-info__item--title strong {
+  display: block;
+  color: #ff4d72;
+  font-weight: 600;
+}
+
+.store-catering-info__item dl {
+  display: flex;
+}
+
+.store-catering-info__item dl > div {
+  width: 50%;
+}
+
+.store-catering-info__item dt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 25px;
+  margin-bottom: 14px;
+  border-radius: 12.5px;
+  background-color: #c1bbaf;
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.store-catering-info__item dd {
+  color: #41332c;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.3846153846;
+}
+
+.store-catering-info__item dd span {
+  color: #ff4d72;
+}
+
+.store-catering-info__item:nth-child(1) .store-catering-info__visual {
+  background-image: url(/images/store/catering/img_info_item_1.png);
+}
+.store-catering-info__item:nth-child(2) .store-catering-info__visual {
+  background-image: url(/images/store/catering/img_info_item_2.png);
+}
+.store-catering-info__item:nth-child(3) .store-catering-info__visual {
+  background-image: url(/images/store/catering/img_info_item_3.png);
+}
+.store-catering-info__item:nth-child(4) .store-catering-info__visual {
+  background-image: url(/images/store/catering/img_info_item_4.png);
+}
+.store-catering-info__item:nth-child(5) .store-catering-info__visual {
+  background-image: url(/images/store/catering/img_info_item_5.png);
+}
+
+.store-catering-howto {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.store-catering-howto__title {
+  margin: 165px 0 50px;
+  color: #41332c;
+  font-size: 25px;
+  text-align: center;
+}
+
+.store-catering-howto__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.store-catering-howto__item {
+  position: relative;
+  width: 310px;
+  height: 310px;
+  border: 1px solid #d8d1c5;
+  border-radius: 50%;
+  color: #41332c;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+}
+
+.store-catering-howto__item span {
+  display: block;
+  margin: 190px 0 12px;
+  color: #ff4d72;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.store-catering-howto__item:not(:last-child):after {
+  display: block;
+  position: absolute;
+  top: calc(50% - 11px);
+  right: -25px;
+  width: 14px;
+  height: 22px;
+  background: url(/images/store/catering/img_order_arrow.png) no-repeat center
+    center;
+  content: "";
+}
+
+.store-catering-howto__item:nth-child(1) {
+  background: url(/images/store/catering/img_order_item_1.png) no-repeat center
+    68px;
+}
+
+.store-catering-howto__item:nth-child(2) {
+  background: url(/images/store/catering/img_order_item_2.png) no-repeat center
+    68px;
+}
+
+.store-catering-howto__item:nth-child(3) {
+  background: url(/images/store/catering/img_order_item_3.png) no-repeat center
+    68px;
+}
+
+.store-catering-howto__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.store-catering-howto__content li {
+  color: #8f827b;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.3846153846;
+  letter-spacing: -0.05em;
+}

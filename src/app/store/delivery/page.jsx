@@ -1,3 +1,4 @@
+import DeliveryContent from "@/components/store/delivery/DeliveryContent";
 import PageHeader from "@/components/store/PageHeader";
 
 export default function Delivery() {
@@ -12,6 +13,7 @@ export default function Delivery() {
           </p>
         </div>
       </PageHeader>
+      <DeliveryContent></DeliveryContent>
     </section>
   );
 }

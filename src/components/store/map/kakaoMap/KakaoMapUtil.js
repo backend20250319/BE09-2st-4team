@@ -20,7 +20,7 @@ export const initMap = (mapRef, setMapReady) => {
   const container = document.getElementById("map");
   const options = {
     center: new window.kakao.maps.LatLng(0, 0),
-    level: 4,
+    level: 5,
   };
   mapRef.current = new window.kakao.maps.Map(container, options);
   setMapReady(true);
