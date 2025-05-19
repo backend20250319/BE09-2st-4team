@@ -218,6 +218,7 @@ ul.event-list-list__list {
   padding: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
   font-weight: 900;
 }
 
