@@ -1,3 +1,5 @@
+// src/components/play/br_play/EventDetail.jsx
+
 import { useParams } from "react-router-dom";
 import eventData from "../data/eventData";
 

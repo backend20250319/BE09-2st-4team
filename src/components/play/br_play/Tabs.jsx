@@ -1,3 +1,5 @@
+// src/components/play/br_play/Tabs.jsx
+
 "use client";
 import React from "react";
 export default function Tabs({ tabs, active, onChange }) {
