@@ -93,7 +93,9 @@ export default function Footer() {
           <div className="br-footer-links-grid">
             <div>
               <div className="br-footer-link-title">Menu</div>
-              <div className="br-footer-link-item">이달의 맛</div>
+              <div className="br-footer-link-item">
+                <Link href="/menu/thismonth">이달의 맛</Link>
+              </div>
               <div className="br-footer-link-item">아이스크림</div>
               <div className="br-footer-link-item">프리팩</div>
               <div className="br-footer-link-item">아이스크림 케이크</div>
@@ -103,15 +105,16 @@ export default function Footer() {
             </div>
             <div>
               <div className="br-footer-link-title">BR Play</div>
-              <div className="br-footer-link-item">이벤트</div>
+              <div className="br-footer-link-item">
+                <Link href="/play">이벤트</Link>
+              </div>
               <div className="br-footer-link-item">배라광장</div>
               <div className="br-footer-link-item">BR레시피</div>
               <div className="br-footer-link-item">마이플레이버리스트</div>
             </div>
             <div>
               <div className="br-footer-link-title">BR Story</div>
-              <div className="br-footer-link-item">브랜드 스토리</div>
-
+              <div className="br-footer-link-item"></div>
               <div className="br-footer-link-item">
                 <Link href="/story/history">이달의 맛 히스토리</Link>
               </div>
@@ -121,7 +124,9 @@ export default function Footer() {
             </div>
             <div>
               <div className="br-footer-link-title">Delivery/Store</div>
-              <div className="br-footer-link-item">매장 찾기</div>
+              <div className="br-footer-link-item">
+                <Link href="/store/map">매장찾기</Link>
+              </div>
               <div className="br-footer-link-item">
                 100flavor 플래그십스토어
               </div>

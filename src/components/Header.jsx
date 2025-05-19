@@ -43,7 +43,7 @@ export default function Header() {
                 className="site-menu__item-wrapper"
                 onMouseEnter={() => handleMouseEnter("menu")}
               >
-                <Link href="#" className="site-menu__link">
+                <Link href="/menu" className="site-menu__link">
                   Menu
                 </Link>
               </div>
@@ -52,7 +52,7 @@ export default function Header() {
                 className="site-menu__item-wrapper"
                 onMouseEnter={() => handleMouseEnter("brplay")}
               >
-                <Link href="#" className="site-menu__link">
+                <Link href="/play" className="site-menu__link">
                   BR Play
                 </Link>
               </div>
@@ -61,7 +61,7 @@ export default function Header() {
                 className="site-menu__item-wrapper"
                 onMouseEnter={() => handleMouseEnter("brstory")}
               >
-                <Link href="#" className="site-menu__link">
+                <Link href="/story/brandhistory" className="site-menu__link">
                   BR Story
                 </Link>
               </div>
@@ -70,7 +70,7 @@ export default function Header() {
                 className="site-menu__item-wrapper"
                 onMouseEnter={() => handleMouseEnter("deliveryStore")}
               >
-                <Link href="#" className="site-menu__link">
+                <Link href="/store/map" className="site-menu__link">
                   Delivery/Store
                 </Link>
               </div>
@@ -79,12 +79,23 @@ export default function Header() {
 
           <div className="site-header__right">
             {/* 검색 기능 */}
-            <Link
-              href="#"
-              className="site-header__icon search-icon"
-              aria-label="검색"
-              onClick={handleSearchToggle}
-            />
+            <div
+              style={{
+                position: "relative",
+                display: "flex",
+                width: "80px",
+                flexDirection: "column",
+                alignItems: "flex-end",
+              }}
+            >
+              <Link
+                href="#"
+                className="site-header__icon search-icon"
+                aria-label="검색"
+                onClick={handleSearchToggle}
+              />
+              <div className="underline-only" />
+            </div>
 
             {/* 유저 아이콘 기능 */}
             <div className="user-menu-wrapper">
@@ -96,13 +107,22 @@ export default function Header() {
 
               {isUserMenuOpen && (
                 <div className="user-dropdown">
-                  <Link href="#" className="user-dropdown__item">
+                  <Link
+                    href="https://www.baskinrobbins.co.kr/login/login.php?returnURL=%2Fstory%2Fhistory.php%3Frelease_year%3D2025"
+                    className="user-dropdown__item"
+                  >
                     <strong>Login</strong>
                   </Link>
-                  <Link href="#" className="user-dropdown__item">
+                  <Link
+                    href="https://www.happypointcard.com/page/join/index.spc"
+                    className="user-dropdown__item"
+                  >
                     Join
                   </Link>
-                  <Link href="#" className="user-dropdown__item">
+                  <Link
+                    href="https://www.baskinrobbins.co.kr/information-center/customer/list.php"
+                    className="user-dropdown__item"
+                  >
                     <strong>CS CENTER</strong>
                   </Link>
                 </div>
@@ -119,25 +139,25 @@ export default function Header() {
           onMouseEnter={() => handleMouseEnter("menu")}
         >
           <div className="submenu-bar__container">
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/thismonth" className="submenu__item">
               이달의 맛
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu" className="submenu__item">
               아이스크림
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/prepack" className="submenu__item">
               프리팩
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/icecreamcake" className="submenu__item">
               아이스크림 케이크
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/dessert" className="submenu__item">
               디저트
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/beverage" className="submenu__item">
               음료
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/menu/coffee" className="submenu__item">
               커피
             </Link>
           </div>
@@ -165,13 +185,13 @@ export default function Header() {
             <div className="submenu-column">
               <h4 className="submenu-title">BR Play</h4>
               <div className="submenu-items">
-                <Link href="#" className="submenu__item sub">
+                <Link href="/play/plaza" className="submenu__item sub">
                   배라광장
                 </Link>
-                <Link href="#" className="submenu__item sub">
+                <Link href="/play/recipe" className="submenu__item sub">
                   BR레시피
                 </Link>
-                <Link href="#" className="submenu__item sub">
+                <Link href="/play/myflavor" className="submenu__item sub">
                   마이플레이버리스트
                 </Link>
               </div>
@@ -186,13 +206,13 @@ export default function Header() {
           onMouseEnter={() => handleMouseEnter("brstory")}
         >
           <div className="submenu-bar__container">
-            <Link href="#" className="submenu__item">
+            <Link href="/story/brandhistory" className="submenu__item">
               브랜드 스토리
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/story/history" className="submenu__item">
               이달의 맛 히스토리
             </Link>
-            <Link href="#" className="submenu__item">
+            <Link href="/story/bebetter" className="submenu__item">
               Be Better
             </Link>
           </div>
@@ -209,13 +229,13 @@ export default function Header() {
             <div className="submenu-column">
               <h4 className="submenu-title">Store</h4>
               <div className="submenu-items">
-                <Link href="#" className="submenu__item sub">
+                <Link href="/store/map" className="submenu__item sub">
                   매장 찾기
                 </Link>
-                <Link href="#" className="submenu__item sub">
+                <Link href="/store/flavor" className="submenu__item sub">
                   100flavor 플래그십스토어
                 </Link>
-                <Link href="#" className="submenu__item sub">
+                <Link href="/store/workshop" className="submenu__item sub">
                   워크샵 by 배스킨라빈스
                 </Link>
                 <Link href="#" className="submenu__item sub">
@@ -226,10 +246,10 @@ export default function Header() {
             <div className="submenu-column">
               <h4 className="submenu-title">Delivery</h4>
               <div className="submenu-items">
-                <Link href="#" className="submenu__item sub">
+                <Link href="/store/delivery" className="submenu__item sub">
                   배달주문
                 </Link>
-                <Link href="#" className="submenu__item sub">
+                <Link href="/store/catering" className="submenu__item sub">
                   단체주문
                 </Link>
               </div>
@@ -255,12 +275,19 @@ export default function Header() {
               placeholder="제품명을 입력하세요"
             />
             <button className="search-submit" aria-label="검색">
-              <Image
-                src="/images/btn_search_big.png"
-                alt="검색"
-                width={24}
-                height={24}
-              />
+              <Link
+                href="/menu/menuview1"
+                className="search-submit"
+                aria-label="검색"
+              >
+                <img
+                  src="/images/btn_search_big.png"
+                  alt="검색"
+                  width={24}
+                  height={24}
+                  style={{ cursor: "pointer" }}
+                />
+              </Link>
             </button>
           </div>
         </div>

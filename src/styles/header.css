@@ -1,3 +1,15 @@
+/* 애니메이션 정의 */
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -51,7 +63,8 @@ body {
 }
 
 .site-menu__link:hover {
-  text-decoration: underline;
+  color: black;
+  text-decoration: none;
 }
 
 .site-header__right {
@@ -113,10 +126,35 @@ body {
   font-weight: bold;
   font-size: 16px;
   margin: 0 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUpFade 0.4s ease-out forwards;
 }
 
 .submenu__item:hover {
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.submenu__item:nth-child(1) {
+  animation-delay: 0s;
+}
+.submenu__item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.submenu__item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.submenu__item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.submenu__item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.submenu__item:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.submenu__item:nth-child(7) {
+  animation-delay: 0.6s;
 }
 
 .submenu-bar__container.column {
@@ -239,4 +277,11 @@ body {
 
 .user-dropdown__item:hover {
   background-color: #f9f9f9;
+}
+
+.underline-only {
+  width: 80px; /* 밑줄 길이 */
+  height: 2px; /* 두께 */
+  background-color: white;
+  margin-top: 4px; /* 아이콘과의 간격 */
 }
