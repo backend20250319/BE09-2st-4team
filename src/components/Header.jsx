@@ -255,7 +255,12 @@ export default function Header() {
               placeholder="제품명을 입력하세요"
             />
             <button className="search-submit" aria-label="검색">
-              🔍
+              <Image
+                src="/images/btn_search_big.png"
+                alt="검색"
+                width={24}
+                height={24}
+              />
             </button>
           </div>
         </div>

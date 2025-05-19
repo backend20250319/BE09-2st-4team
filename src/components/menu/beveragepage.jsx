@@ -11,7 +11,7 @@ const beveragePage = [
   {
     name: "카푸치노 블라스트\n(오리지널, 모카)",
     file: "beverage-2.png",
-    label: "NEW",
+    label: "BEST",
     tags: "#카푸치노 #블라스트",
   },
   {
