@@ -64,15 +64,6 @@
     <img src="https://github.com/user-attachments/assets/25a17503-c8d9-487d-83f1-a25024498786" width="50%" height="50%" />
     
 
-![배스킨라빈스 - Chrome 2025-05-18 00-32-42.gif](attachment:0f594ba7-a18f-4f83-97e5-10a772c15ef1:배스킨라빈스_-_Chrome_2025-05-18_00-32-42.gif)
-
-[ppt 시연.mp4](attachment:38ebac81-c93f-44bd-b3be-33b0f7d143d3:ppt_시연.mp4)
-
-![image.png](attachment:6fa169b2-e5cf-47b3-b59f-d19d8b5c5143:image.png)
-
-![main 2.png](attachment:5371c76c-16f4-46ea-ba3d-5b9c88025548:main_2.png)
-
-![main 3.png](attachment:0b7c4647-ad2b-48a0-b6f9-5aa6cb203c48:main_3.png)
 
 ## **1. 메인화면 Main**
 
