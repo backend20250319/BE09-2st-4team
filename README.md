@@ -58,9 +58,27 @@
 ---
 
 # 🍦 기술 스택 및 사용 툴
-- **프론트엔드** : ![HTML](https://img.shields.io/badge/html-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/css-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) ![React](https://img.shields.io/badge/react-61DAFB.svg?style=for-the-badge&logo=react&logoColor=black) ![Next.js](https://img.shields.io/badge/next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Swiper](https://img.shields.io/badge/Swiper-6332F6.svg?style=for-the-badge&logo=swiper&logoColor=white) ![KakaoMap](https://img.shields.io/badge/KakaoMap-FFCD00.svg?style=for-the-badge&logo=kakaotalk&logoColor=black)
-- **버전 관리** : ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-- **개발 도구** : ![VSCode](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+### 🧑‍💻 사용 언어 및 프레임워크
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+
+
+### 📦 라이브러리 & API
+![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
+![KakaoMap](https://img.shields.io/badge/KakaoMap-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black)
+
+
+### 🔧 개발 도구
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+
+### 🔄 버전 관리
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
 ---
 # 🍦 **프로젝트 목표**
 
@@ -207,8 +225,17 @@
 ### 이주희
   - 
 ### 이지용
-  - 
+- 실제 프로젝트를 진행하면서 상태 관리를 하는 것이 생각보다 복잡하고 신경을 많이 써야된다는 것을 느낌이 들었다.
+- CSS, JS, React도 공부할 것이 더 있다고 생각이 들었다.
+- 라이브러리나 api를 잘 활용할 수 있어야 된다는 것을 깨달았다.
 ### 박창준
-  - 
+- 프론트엔드도 사실 처음 접한 부분이라 많은 어려움이 있을거 같았지만 좋은 팀원분들과 함께 협업해서 하다보니 무사히 잘 마칠 수 있었고 다들 잘 알려주셔서 덕분에 많이 배울 수 있었던 거 같다.
+- 다음 프로젝트에서는 더 열심히해서 내가 다른 분들에게 더 많은 도움이 될 수 있도록 하고 싶다.
+- Html, JavaScript, Css, React, Next.js에 대해 완벽하게 하지는 못해도 어느정도는 완벽하게 해서 다음에도 잘 활용 할 수 있게 공부해야 될 거 같다는 생각이 들었다.
+- 프로젝트를 하다보니 git과 github를 이용한 협업에서도 전보단 많이 좋아졌지만 아직 어려움이 있어 열심히 다시 공부를 해야겠다는 생각이 들었다.
+- 이번에 git을 GUI로 관리할 수 있는 Fork 프로그램을 써봤는데 아직 처음이라 많은 어려움이 있었는데 앞으로는 계속해서 CLI로 관리하는 방법을 하기보다 직관적으로 확인할 수 있는 Fork 프로그램을 써봐야 될 거 같다.
 ### 조석근
-  - React 및 CSS에 대한 이해도가 낮아 개발 과정에서 다소 어려움을 겪었으며, 프론트엔드 전반에 대한 기술 역량 향상의 필요성을 절감하였고 React를 처음 접한 만큼, 컴포넌트 구조와 상태 관리 등 기초 개념부터 체계적으로 학습할 계획이다. 프로젝트를 통해 JavaScript 기반 프레임워크를 다루기 위해서는 JS 자체에 대한 탄탄한 이해가 선행되어야 함을 실감하였고 SCSS를 활용한 디자인 작업이 예상보다 복잡하고 세밀한 조정이 요구되어, 향후 다양한 실습을 통해 UI/UX 구현 능력을 강화할 필요가 있다고 생각했다. 한계점으로는 제한된 시간으로 인해 세부적인 완성도가 다소 미흡하였으며, 일부 UI 요소의 정교한 구현이 부족했고 메인 화면을 포함한 전체 페이지의 주요 기능 구현이 일부 완료되지 못했던 것이다.
+- React 및 CSS에 대한 이해도가 낮아 개발 과정에서 다소 어려움을 겪었으며, 프론트엔드 전반에 대한 기술 역량 향상의 필요성을 절감하였다.
+- React를 처음 접한 만큼, 컴포넌트 구조와 상태 관리 등 기초 개념부터 체계적으로 학습할 계획이다.
+- 프로젝트를 통해 JavaScript 기반 프레임워크를 다루기 위해서는 JS 자체에 대한 탄탄한 이해가 선행되어야 함을 실감하였다.
+- SCSS를 활용한 디자인 작업이 예상보다 복잡하고 세밀한 조정이 요구되어, 향후 다양한 실습을 통해 UI/UX 구현 능력을 강화할 필요가 있다.
