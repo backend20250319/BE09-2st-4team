@@ -1,0 +1,136 @@
+.store-map-field {
+  width: calc(100% - 370px);
+  height: 1190px;
+  overflow: hidden;
+  background: url(https://t1.daumcdn.net/mapjsapi/images/2x/bg_tile.png);
+  position: relative;
+}
+.kakao-map {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  cursor: url(https://t1.daumcdn.net/mapjsapi/images/2x/cursor/openhand.cur.ico)
+      7 5,
+    url(https://t1.daumcdn.net/mapjsapi/images/2x/cursor/openhand.cur.ico),
+    default;
+  z-index: 10;
+}
+
+/* 카카오맵 인포윈도우  */
+.marker_container {
+  position: relative;
+  padding: 39px 0 21px;
+  border: none;
+}
+.marker_inner {
+  position: relative;
+  width: 528px;
+  padding: 0 30px 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff7c98;
+  border-radius: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.marker_header {
+  display: inline-block;
+  padding: 0 20px;
+  margin: -40px 0 0;
+  text-align: center;
+}
+.marker_header:before {
+  display: block;
+  width: calc(100% + 40px);
+  height: 40px;
+  margin-left: -20px;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #ff7c98;
+  border-radius: 16px 16px 0 0;
+  background: #fff;
+  box-sizing: border-box;
+  content: "";
+}
+
+.marker_title {
+  position: relative;
+  z-index: 10;
+  margin-top: -25px;
+  color: #2f231c;
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+.marker_type {
+  display: block;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 2px;
+  color: #ff7c98;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.marker_button {
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+}
+
+.marker_button_img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.marker_content {
+  margin-top: 24px;
+}
+
+.marker_talbe {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+.marker_table th {
+  padding: 8px 0;
+  color: #948780;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.marker_table td {
+  padding: 8px 0 8px 15px;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}

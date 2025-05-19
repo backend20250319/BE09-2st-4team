@@ -1,0 +1,44 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   1. 브레드크럼 & 타이틀 (rem 단위로 변환)
+───────────────────────────────────────────────────────────────────────── */
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem; /* 24px */
+  font-size: 1.25rem; /* 20px */
+  color: #f986bd;
+  margin-top: 5rem; /* 80px */
+  white-space: nowrap;
+}
+
+.breadcrumbbar,
+.breadcrumbbar a {
+  color: #f986bd;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.breadcrumbbar.active1 {
+  color: #fff;
+  background-color: #f986bd;
+  border: 1px solid #f986bd;
+  padding: 0.0625rem 0.8125rem; /* 1px 13px */
+}
+
+.bebetter-title {
+  font-size: 6.25rem; /* 100px */
+  font-weight: 1000;
+  color: #f986bd;
+  text-align: center;
+  margin: 1.25rem 0 0.625rem; /* 20px 0 10px */
+}
+
+.bebetter-undertitle {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  color: #f986bd;
+  text-align: center;
+  margin-bottom: 0.625rem; /* 10px */
+}

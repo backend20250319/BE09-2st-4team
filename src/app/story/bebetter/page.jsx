@@ -3,20 +3,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import "@/styles/bebetter/bebetter.css";
-import "@/styles/bebetter/modal.css";
+import "@/styles/story/bebetter/bebetter.css";
+import "@/styles/story/bebetter/modal.css";
 
 export default function BeBetterPage() {
   return (
-    <main className="bebetter-wrapper">
+    <main className="bebetter-wrapper3">
       <div className="breadcrumb">
-        <span className="breadcrumbbar">브랜드 스토리</span>
+        <Link href="/story/history" className="breadcrumbbar">
+          브랜드 스토리
+        </Link>
         <span className="divider">|</span>
         <Link href="/story/history" className="breadcrumbbar">
           이달의 맛 히스토리
         </Link>
-        <span className="divider">|</span>
-        <span className="breadcrumbbar active">Be Better</span>
+        <span className="breadcrumbbar active1">Be Better</span>
       </div>
 
       <h1 className="bebetter-title">Be Better</h1>
@@ -28,7 +29,7 @@ export default function BeBetterPage() {
         {/* 핑크드림 카드 */}
         <div className="bebetter-card">
           <Image
-            src="/images/BeBetterPage/img_dream.png"
+            src="/images/story/BeBetterPage/img_dream.png"
             alt="핑크드림"
             width={550}
             height={450}
@@ -37,9 +38,9 @@ export default function BeBetterPage() {
           <div className="bebetter-text">
             <p className="bebetter-blocksidetitle1">핑크드림 캠페인이란?</p>
             <div className="card-header">
-              <h2 className="highlight-red">
+              <h4 className="highlight-red">
                 배라와 소비자가 함께 만드는 따뜻한 31데이!
-              </h2>
+              </h4>
               <a rel="noopener noreferrer" className="more-link red">
                 더보기
               </a>
@@ -54,7 +55,7 @@ export default function BeBetterPage() {
             <div className="check-list">
               <div className="check-item">
                 <Image
-                  src="/images/BeBetterPage/icon_check.jpg"
+                  src="/images/story/BeBetterPage/icon_check.jpg"
                   alt="check"
                   width={550}
                   height={450}
@@ -67,7 +68,7 @@ export default function BeBetterPage() {
               </div>
               <div className="check-item">
                 <Image
-                  src="/images/BeBetterPage/icon_check.jpg"
+                  src="/images/story/BeBetterPage/icon_check.jpg"
                   alt="check"
                   width={25}
                   height={20}
@@ -79,7 +80,7 @@ export default function BeBetterPage() {
               </div>
               <div className="check-item">
                 <Image
-                  src="/images/BeBetterPage/icon_check.jpg"
+                  src="/images/story/BeBetterPage/icon_check.jpg"
                   alt="check"
                   width={25}
                   height={20}
@@ -96,7 +97,7 @@ export default function BeBetterPage() {
         {/* 핑크팜 카드 */}
         <div className="bebetter-card">
           <Image
-            src="/images/BeBetterPage/img_farm.png"
+            src="/images/story/BeBetterPage/img_farm.png"
             alt="핑크팜"
             width={550}
             height={450}
@@ -121,7 +122,7 @@ export default function BeBetterPage() {
             <div className="check-list">
               <div className="check-item">
                 <Image
-                  src="/images/BeBetterPage/icon_check.jpg"
+                  src="/images/story/BeBetterPage/icon_check.jpg"
                   alt="check"
                   width={25}
                   height={20}
@@ -137,7 +138,7 @@ export default function BeBetterPage() {
 
         <div className="bebetter-card">
           <Image
-            src="/images/BeBetterPage/img_link.png"
+            src="/images/story/BeBetterPage/img_link.png"
             alt="핑크링크"
             width={550}
             height={450}
@@ -161,7 +162,7 @@ export default function BeBetterPage() {
             <div className="check-list">
               <div className="check-item">
                 <Image
-                  src="/images/BeBetterPage/icon_check.jpg"
+                  src="/images/story/BeBetterPage/icon_check.jpg"
                   alt="check"
                   width={1}
                   height={1}
