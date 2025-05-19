@@ -1,7 +1,6 @@
 import "../styles/mainpage/main.css";
 import "@/styles/header.css";
-import H
-eader from "../components/Header";
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
