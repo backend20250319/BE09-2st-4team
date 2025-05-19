@@ -3,7 +3,7 @@ import WorkshopContent from "@/components/store/workshop/WorkshopContent";
 
 export default function Workshop() {
   return (
-    <section>
+    <section style={{ paddingBottom: "150px" }}>
       <PageHeader title="Workshop">
         <div className="page-header__content">
           <p className="page-header__text">

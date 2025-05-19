@@ -99,8 +99,6 @@ export default function FlavorStore() {
                 </div>
               </dl>
             </div>
-
-            <SwipeSlide />
           </div>
         ))}
       </div>
