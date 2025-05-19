@@ -1,7 +1,7 @@
 import "../styles/mainpage/main.css";
-import "@/styles/Header.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import "@/styles/header.css";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export const metadata = {
   title: "배스킨라빈스",
