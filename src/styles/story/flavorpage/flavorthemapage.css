@@ -1,8 +1,10 @@
 .flavor-history-page {
-  padding: 40px 60px;
   max-width: 1200px;
+  width: 100%;
+  padding: 40px 5%;
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
+  overflow: hidden;
 }
 
 .breadcrumb {
@@ -15,6 +17,17 @@
   margin-bottom: 8px;
   white-space: nowrap;
   text-decoration: none;
+}
+
+.breadcrumb a {
+  color: #ed5fa5;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: #ed5fa5;
 }
 
 .divider {
@@ -37,7 +50,7 @@
   font-weight: 800;
   color: #f986bd;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 
 .page-desc {
@@ -95,7 +108,7 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 200px;
   list-style: none;
   padding: 0;
 }
@@ -107,21 +120,34 @@
 }
 
 .year-list .active-year {
-  font-size: 20;
+  font-size: 20px;
   font-weight: bold;
   color: #000;
-  line-height: -1px;
+  line-height: 1.4;
 }
 
 .flavor-grid {
+  width: 100%;
   display: grid;
+  justify-items: center;
+  margin:150;
   grid-template-columns: repeat(5, 1fr);
 }
 
+.flavor-card {
+  pointer-events: none;
+  user-select: none;
+}
+
 .flavor-image {
+  aspect-ratio: 3 / 4;
   display: block;
   width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%);
   margin: 0;
+  margin-left: 0;
   padding: 0;
   pointer-events: none;
   user-select: none;
@@ -129,11 +155,7 @@
 
 .flavor-image:hover {
   transform: scale(1.03);
-}
-
-.flavor-card {
-  pointer-events: none;
-  user-select: none;
+  aspect-ratio: 3 / 4;
 }
 
 .category-icon {
