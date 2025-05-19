@@ -1,0 +1,97 @@
+.brbenefit-container {
+  width: 100%;
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.brbenefit-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brbenefit-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff5484;
+  margin-bottom: 15px;
+}
+
+.brbenefit-description {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.brbenefit-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+/* 5개 카드를 일렬로 배치 */
+.brbenefit-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.brbenefit-card {
+  flex: 0 0 220px; /* 고정 너비 */
+  transition: transform 0.3s ease;
+}
+
+.brbenefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.brbenefit-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.brbenefit-card-image:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .brbenefit-grid {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .brbenefit-card {
+    flex: 0 0 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brbenefit-card {
+    flex: 0 0 180px;
+  }
+
+  .brbenefit-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brbenefit-card {
+    flex: 0 0 150px;
+  }
+
+  .brbenefit-title {
+    font-size: 30px;
+  }
+
+  .brbenefit-grid {
+    gap: 15px;
+  }
+}

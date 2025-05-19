@@ -6,6 +6,9 @@ import PromotionSection from "../components/mainpage/PromotionSection.jsx";
 import NewItemSection from "@/components/mainpage/NewItemSection.jsx";
 import BRPlaySection from "@/components/mainpage/BrPlay.jsx";
 import BeBetterSection from "@/components/mainpage/BeBetter.jsx";
+import BRBenefitSection from "@/components/mainpage/BrBenefit.jsx";
+import BRStoreWaySection from "@/components/mainpage/BrStoreWay.jsx";
+
 import "../styles/mainpage/main.css";
 
 export default function Home() {
@@ -36,10 +39,15 @@ export default function Home() {
         <BeBetterSection />
       </section>
 
+      {/* BR Benefit 섹션 - 추가 */}
+      <section className="benefit-section">
+        <BRBenefitSection />
+      </section>
+
       {/* 매장 찾기 섹션 */}
       <section className="store-finder-section">
-        <h2 className="section-title">내 주변 가까운 배스킨라빈스 매장</h2>
         {/* 매장 찾기 UI */}
+        <BRStoreWaySection />
       </section>
     </main>
   );
