@@ -25,13 +25,43 @@
     
     ## 공통 부분 : Header Footer
     
-    ![header.png](attachment:beec9af1-2b51-468c-a611-941fba11fa6d:header.png)
+    <img src="https://github.com/user-attachments/assets/1b08270b-48ed-4f07-b700-15d9506f3a40" width="100%" height="100%" />
     
-    ![footer.png](attachment:06182cf9-09ff-468a-95ce-899d26b823e2:footer.png)
+    <img src="https://github.com/user-attachments/assets/289b6a77-427d-4c96-b383-344369f24ff4" width="50%" height="50%" />
     
     ## ****
     
     ## **1. 메인화면 Main**
+
+    <img src="https://github.com/user-attachments/assets/a94fc338-55fe-4bb7-bd4c-9a89dc942c11" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/f3769f68-c8d4-4b43-a742-b4259a99ed48" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/c49ce78a-34d6-4a0b-ba52-bd0c46da4a70" width="50%" height="50%" />
+  
+    ## **2. 메뉴 Menu**
+
+    <img src="https://github.com/user-attachments/assets/46d193bb-4ab6-463b-8cc1-6b738867a10a" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/1f69f2d6-9c6f-4a7c-b5e1-ade9827a69b0" width="50%" height="50%" />
+
+    ## **3. 메뉴 BR Play**
+
+    <img src="https://github.com/user-attachments/assets/8f077f42-a70a-4852-a7c1-cb3c8aeb7562" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/695a4a11-1f79-4da7-93de-a560df4a77e2" width="50%" height="50%" />
+
+    ## **4. BR Story**
+
+    <img src="https://github.com/user-attachments/assets/17ad86bc-195a-46e0-90c1-f4c98413662c" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/ab4b005f-6734-4102-a9d1-54807dfa5b0b" width="50%" height="50%" />
+
+    ## **5. Delivery/Store **
+
+    <img src="https://github.com/user-attachments/assets/37256745-0838-4e21-82de-4d03369f95d6" width="50%" height="50%" />
+
+    <img src="https://github.com/user-attachments/assets/25a17503-c8d9-487d-83f1-a25024498786" width="50%" height="50%" />
     
 
 ![배스킨라빈스 - Chrome 2025-05-18 00-32-42.gif](attachment:0f594ba7-a18f-4f83-97e5-10a772c15ef1:배스킨라빈스_-_Chrome_2025-05-18_00-32-42.gif)
