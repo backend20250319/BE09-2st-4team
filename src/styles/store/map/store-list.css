@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.store-map-list__container {
+  overflow-y: auto;
+  height: 855px;
+  margin-top: 15px;
+}
+
+.store-map-list__button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 143px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #000;
+  border: 0;
+  background: transparent;
+}
+.store-map-list__title {
+  color: #2f231c;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.store-map-list__address {
+  font-style: normal;
+  margin-top: 5px;
+  color: #948780;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.3333333333;
+}
+
+.store-map-list__address,
+.store-map-list__content {
+  color: #948780;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.3333333333;
+}

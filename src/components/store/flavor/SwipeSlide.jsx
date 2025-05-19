@@ -19,4 +19,11 @@ const slides = [
   },
 ];
 
-export default function SwipeSlide() {}
+export default function SwipeSlide() {
+  return (
+    <div>
+      <h3>sdalknfl;kdafgn;laknbf</h3>
+      <div></div>
+    </div>
+  );
+}

@@ -3,7 +3,7 @@ import FlavorContent from "@/components/store/flavor/FlavorContent";
 import FlavorStore from "@/components/store/flavor/FlavorStore";
 export default function Flavor() {
   return (
-    <section>
+    <section style={{ paddingBottom: "100px" }}>
       <PageHeader title="100 Flavor">
         <div className="page-header__content">
           <p className="page-header__text">배스킨라빈스 100flavor</p>
