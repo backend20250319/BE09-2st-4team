@@ -13,7 +13,7 @@ export default function KakaoMap() {
   useEffect(() => {
     if (!document.getElementById("kakao-map-script")) {
       loadScript(mapRef, setMapReady);
-    } else if (mapReady) {
+    } else if (window.kakao && window.kakao.maps) {
       window.kakao.maps.load(() => {
         initMap(mapRef, setMapReady);
       });
