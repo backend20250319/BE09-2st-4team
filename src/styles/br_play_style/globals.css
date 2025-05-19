@@ -173,12 +173,12 @@ ul.event-list-list__list {
 
 /* 이미지 블록 */
 .card-image-wrap {
-  flex: 0 0 240px; /* 너비 고정 */
-  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
   position: relative;
+  flex: 0 0 240px;
+  aspect-ratio: 1 / 1;
   background-color: var(--bg-color, #f0f0f0);
   border-radius: 12px;
-  overflow: hidden; /* 둥근 테두리가 적용되도록 이미지 자르기 */
+  overflow: hidden;
 }
 
 /* (호환성을 위해 ::before 트릭도 유지) */
@@ -194,13 +194,16 @@ ul.event-list-list__list {
 /* 배지 */
 .card-image-wrap .badge {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 0;
+  right: 0;
   background: #f986bd;
   color: #fff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 12px;
+  z-index: 2;
 }
 
 /* 실제 이미지 */
@@ -301,5 +304,3 @@ ul.event-list-list__list {
   margin: auto;
   padding: 0 20px 100px;
 }
-
-/*  */
