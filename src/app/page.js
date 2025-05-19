@@ -1,95 +1,56 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
+"use client";
+
+import { useState, useEffect } from "react";
+import BannerSlider from "../components/mainpage/BannerSilider.jsx";
+import PromotionSection from "../components/mainpage/PromotionSection.jsx";
+import NewItemSection from "@/components/mainpage/NewItemSection.jsx";
+import BRPlaySection from "@/components/mainpage/BrPlay.jsx";
+import BeBetterSection from "@/components/mainpage/BeBetter.jsx";
+import BRBenefitSection from "@/components/mainpage/BrBenefit.jsx";
+import BRStoreWaySection from "@/components/mainpage/BrStoreWay.jsx";
+
+import "../styles/mainpage/main.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="home-container">
+      {/* 메인 슬라이더 */}
+      <section className="main-slider-section">
+        <BannerSlider />
+      </section>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {/* 프로모션 및 이벤트 섹션 */}
+      <PromotionSection />
+
+      {/* 신제품 소개 섹션 */}
+      <section className="new-products-section">
+        <div className="products-slider">
+          <NewItemSection />
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* 브랜드 스토리 및 사회공헌 섹션 */}
+      <section className="brand-section">
+        <BRPlaySection />
+      </section>
+
+      {/* 캠페인 섹션 */}
+      <section className="campaign-section">
+        <BeBetterSection />
+      </section>
+
+      {/* BR Benefit 섹션 - 추가 */}
+      <section className="benefit-section">
+        <BRBenefitSection />
+      </section>
+
+      {/* 매장 찾기 섹션 */}
+      <section className="store-finder-section">
+        {/* 매장 찾기 UI */}
+        <BRStoreWaySection />
+      </section>
+    </main>
+
   );
 }

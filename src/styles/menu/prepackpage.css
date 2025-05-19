@@ -1,0 +1,131 @@
+.content {
+  text-align: center;
+  padding: 60px 20px;
+  color: #f571b4;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #f571b4;
+}
+
+.prepack-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px 20px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.prepack-item {
+  text-align: center;
+}
+
+.prepack-img {
+  width: 140px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.prepack-img:hover {
+  transform: scale(1.05);
+}
+
+.prepack-name {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #888;
+}
+
+.menu-card {
+  position: relative;
+  width: 233px;
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  padding-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-card:hover {
+  background-color: #ea6b75;
+}
+
+.menu-card.prepack0:hover {
+  background-color: #a1887f;
+}
+
+.menu-card.prepack1:hover {
+  background-color: #c5e1a5;
+}
+
+.menu-card.prepack2:hover {
+  background-color: #6d4c41;
+}
+
+.menu-card.prepack8:hover {
+  background-color: #6d4c41;
+}
+
+.menu-card.prepack9:hover {
+  background-color: #6d4c41;
+}
+
+.menu-card.prepack3:hover {
+  background-color: #9d8571;
+}
+
+.menu-card.prepack7:hover {
+  background-color: #6590d5;
+}
+
+.menu-card.prepack10:hover {
+  background-color: #1c2b39;
+}
+
+.menu-card__image {
+  width: 100%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.menu-card:hover .menu-card__image {
+  transform: translateY(50%);
+}
+
+.menu-card__hash {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff4dd;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+  line-height: 1.4;
+  padding: 0 10px;
+}
+
+.menu-card:hover .menu-card__hash {
+  opacity: 1;
+}

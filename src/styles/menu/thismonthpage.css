@@ -1,0 +1,108 @@
+.month-page {
+  text-align: center;
+  font-family: "Pretendard", sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+.month-title {
+  color: #f47bb1;
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.month-main-box {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.month-header {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.month-eng {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.month-kor {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.month-desc {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.month-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.month-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.month-new-box {
+  width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.new-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a2f2f;
+  padding: 20px 20px 10px;
+  text-align: left;
+}
+
+.new-product {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-product img {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0; /* 왼쪽 정렬 */
+  border-radius: 20px; /* 여기 추가 */
+}
+
+.new-desc {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}

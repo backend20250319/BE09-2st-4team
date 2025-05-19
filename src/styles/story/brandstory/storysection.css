@@ -1,0 +1,186 @@
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bebetter-wrapper1 {
+  background-image: url("/images/story/brandhistory/bg_story.png");
+  background-repeat: no-repeat;
+  background-position: center 330px; /* ✅ Y축 기준 시작점 (고정) */
+  background-size: 58.5vw auto fixed; /* ✅ PC화면에서 너비 기준 고정 */
+  background-attachment: scroll;
+}
+
+/* 1. 전체 섹션 리스트: 수직 간격 정렬 */
+.story-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+/* 2. 각 아이템: 기본 왼쪽 아이콘 */
+.story-item {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* 3. 오른쪽 아이콘일 경우 레이아웃 반전 */
+.story-item.right {
+  grid-template-columns: 1fr 200px;
+}
+.story-item.right .story-logo {
+  grid-column: 2;
+  top: 18rem;
+  justify-self: center;
+  align-self: center;
+}
+
+/* 4. 아이콘(로고 + 연도 원형) 공통 */
+.story-logo {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.story-logo img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.story-logo .story-year {
+  position: absolute;
+  top: 5.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 6rem;
+  background-color: #f986bd;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.story-item.right .story-year {
+  margin-left: 50px;
+}
+
+.story-item.right .story-logo img {
+  margin-left: 100px;
+}
+
+/* 5. 콘텐츠 박스 (텍스트 + 이미지) 공통 */
+.story-box {
+  display: grid;
+  grid-template-columns: 3fr 2fr; /* 기본: 텍스트 | 썸네일 */
+  gap: 1.5rem;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  width: 100%;
+  align-items: center;
+  animation: fadeUp 0.6s ease-out forwards;
+  animation-delay: 0s;
+  opacity: 0; /* 시작 시 숨김 */
+}
+
+/* 6. 오른쪽 아이콘일 때: 썸네일 | 텍스트 */
+.story-item.right .story-box {
+  grid-template-columns: 2fr 3fr;
+}
+
+/* 텍스트/이미지 수직 정렬 */
+.story-text,
+.story-thumb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* 텍스트 정렬 */
+.story-text h3 {
+  margin: 0 0 1rem;
+  font-size: 30px;
+  color: #f986bd;
+}
+.story-text p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #333;
+}
+
+/* 이미지 썸네일 */
+.story-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.offset-1 {
+  margin-top: 85px;
+}
+.offset-2 {
+  margin-top: -80px;
+}
+
+.offset-3 {
+  margin-top: -60px;
+}
+
+.offset-4 {
+  margin-top: -140px;
+}
+
+.offset-5 {
+  margin-top: -20px;
+}
+
+.offset-6 {
+  margin-top: -20px;
+}
+
+.offset-7 {
+  margin-top: 40px;
+}
+
+.offset-8 {
+  margin-top: -5%;
+}
+
+.offset-9 {
+  margin-top: -100px;
+}
+
+.offset-10 {
+  margin-top: -50px;
+}
+
+.offset-11 {
+  margin-top: 150px;
+}
+/* ...계속 추가 */

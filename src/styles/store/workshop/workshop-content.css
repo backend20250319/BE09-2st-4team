@@ -1,0 +1,142 @@
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.store-workshop__top img {
+  display: block;
+  margin: 0 auto;
+}
+.store-workshop {
+  width: 1500px;
+  margin: 0 auto;
+}
+.store-workshop__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.store-workshop__content {
+  margin-top: 80px;
+}
+.store-workshop__list {
+  margin: 130px 0 160px;
+}
+.store-workshop__docent {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.store-workshop__map {
+  text-align: center;
+  color: #132a4f;
+}
+
+.store-workshop__list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.store-workshop__list ul li {
+  width: 100%;
+  display: flex;
+  border-radius: 40px 0;
+  box-shadow: 4px 4px 16px #0003;
+  overflow: hidden;
+  gap: 80px;
+  align-items: center;
+}
+
+.store-workshop__list ul li:nth-of-type(even) {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.store-workshop__list ul li h3 {
+  font-family: var(--font-family-scoop);
+  font-size: 25px;
+  color: #0e2c49;
+  margin-bottom: 12px;
+}
+.store-workshop__list ul li p {
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.66;
+  letter-spacing: -0.05em;
+}
+
+.store-workshop__docent {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.store-workshop__docent .program {
+  color: #132a4f;
+}
+
+.store-workshop__docent .program h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+.store-workshop__docent .program h4 {
+  font-family: var(--font-family-scoop);
+  font-size: 25px;
+  margin: 10px 0;
+}
+.store-workshop__docent .program p {
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.store-workshop__docent > img {
+  display: block;
+  margin: 60px auto;
+}
+
+.store-workshop__docent .time .hours {
+  border-radius: 4px;
+  background-color: #a07028;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 34px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+.store-workshop__docent .time .box {
+  color: #a07028;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: -0.04em;
+  margin: 24px 0 50px;
+  font-weight: 600;
+}
+.store-workshop__docent .time > a {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e436e;
+  border-radius: 30px;
+  padding: 0 30px;
+  line-height: 3.3;
+  font-size: 18px;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 27px;
+  letter-spacing: -0.04em;
+  margin: 0 auto;
+}
+.store-workshop__map {
+  text-align: center;
+  color: #132a4f;
+}
+.store-workshop__map .box h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.store-workshop__map .box p {
+  font-size: 20px;
+  line-height: 1.25;
+}

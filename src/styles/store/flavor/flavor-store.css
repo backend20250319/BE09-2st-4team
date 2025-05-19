@@ -1,0 +1,104 @@
+.flavor-store {
+  margin-top: 220px;
+}
+
+.page-tab {
+  position: relative;
+  width: 1500px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.page-tab:before {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #d4d4d4;
+  content: "";
+}
+.page-tab__list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.page-tab__item {
+  width: 204px;
+  height: 61px;
+}
+
+.page-tab__item--active .page-tab__link {
+  border-bottom-width: 0;
+  background: #fff;
+}
+
+.page-tab__item {
+  width: 204px;
+  height: 61px;
+}
+
+.page-tab__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d4d4d4;
+  border-radius: 16px 16px 0 0;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.page-tab__item--active .page-tab__text {
+  color: #000;
+}
+
+.page-tab__text {
+  color: #b1b1b1;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.store-flavor-store__item {
+  display: none;
+  width: 872px;
+  margin: 0 auto;
+  padding: 30px 0 0 28px;
+}
+
+.store-flavor-store__item--active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-flavor-store__item h3 {
+  margin-bottom: 38px;
+  font-size: 25px;
+}
+
+.store-flavor-store__item dl div {
+  display: flex;
+}
+
+.store-flavor-store__item dt {
+  width: 95px;
+  color: #ed91a7;
+  font-weight: 600;
+  line-height: 1.5625;
+}
+
+.store-flavor-store__item dd {
+  font-weight: 600;
+  line-height: 1.5625;
+
+  width: 210px; /* 너비 설정 */
+  word-wrap: break-word; /* 긴 단어가 있으면 줄바꿈 */
+}
+.store-flavor-store__item dl div + div {
+  margin-top: 10px;
+}

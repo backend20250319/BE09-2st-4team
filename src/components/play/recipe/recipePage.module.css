@@ -1,0 +1,188 @@
+.container {
+  max-width: 1200px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #3a2a19;
+}
+
+.titleMain {
+  font-weight: 900;
+  font-size: 56px;
+  text-align: center;
+  color: #f08fbf;
+  margin-bottom: 12px;
+  letter-spacing: -1.5px;
+}
+
+.titleSub {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #f3abc9;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+/* ✅ Tabs 외부 여백 적용 */
+.tabsWrapper {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Tabs 내부에서 사용하는 버튼 스타일은 Tabs.module.css에서 관리 */
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 4fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.recipeCard {
+  display: flex;
+  border: 1px solid #ddd6d0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.recipeCard:hover {
+  box-shadow: 0 4px 12px rgba(240, 143, 191, 0.3);
+}
+
+.recipeImage {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recipeText {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categoryLabel {
+  font-size: 13px;
+  color: #c2a696;
+  font-weight: 700;
+  margin-bottom: 6px;
+  user-select: none;
+}
+
+.recipeTitle {
+  font-size: 18px;
+  font-weight: 900;
+  color: #2e2c2c;
+  margin: 0 0 6px 0;
+}
+
+.recipeSubTitle {
+  font-weight: 600;
+  color: #4a4a4a;
+  font-size: 14px;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  user-select: none;
+}
+
+.pageBtn {
+  width: 34px;
+  height: 34px;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #ddd6d0;
+  border-radius: 6px;
+  background: none;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background-color: #f8e4e8;
+  border-color: #f08fbf;
+}
+
+.pageBtn:disabled {
+  color: #ccc;
+  cursor: default;
+}
+
+.activePage {
+  background-color: #f08fbf;
+  border-color: #f08fbf;
+  color: white;
+  cursor: default;
+}
+
+.cardLink {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 텍스트 색상 유지 */
+  display: block;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 배치 */
+  gap: 32px;
+}
+
+.recipeCard {
+  display: flex;
+  border: 1px solid #ddd6d0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  min-height: 180px; /* ✅ 높이 조정 */
+}
+
+.recipeCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.recipeImage {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.recipeText {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.categoryLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b88d4a;
+  margin-bottom: 6px;
+}
+
+.recipeTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1d1d1d;
+  margin-bottom: 6px;
+}
+
+.recipeSubTitle {
+  font-size: 15px;
+  color: #555;
+}
