@@ -57,7 +57,6 @@ export default function RootLayout({ children }) {
 
       {/* 본문 */}
       <main className="container">{children}</main>
-      {children}
     </div>
   );
 }

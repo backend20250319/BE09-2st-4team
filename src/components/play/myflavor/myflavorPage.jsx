@@ -20,14 +20,26 @@ const sizes = [
 ];
 
 export default function FlavorList() {
-  const [selectedSize, setSelectedSize] = useState(null);
+  const [selectedFlavors, setSelectedFlavors] = useState(new Set());
+  const [selectedSizes, setSelectedSizes] = useState(new Set());
+
+  const handleFlavorClick = (id) => {
+    const newSet = new Set(selectedFlavors);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setSelectedFlavors(newSet);
+  };
 
   const handleSizeClick = (id) => {
-    setSelectedSize(id);
+    const newSet = new Set(selectedSizes);
+    if (newSet.has(id)) newSet.delete(id);
+    else newSet.add(id);
+    setSelectedSizes(newSet);
   };
 
   const handleReset = () => {
-    setSelectedSize(null);
+    setSelectedFlavors(new Set());
+    setSelectedSizes(new Set());
   };
 
   return (
@@ -41,13 +53,7 @@ export default function FlavorList() {
 
       <div className={styles.flavorCreationBox}>
         <div className={styles.flavorImages}>
-          <img src="/images/flavor1.png" alt="Flavor 1" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor2.png" alt="Flavor 2" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor3.png" alt="Flavor 3" />
-          <span className={styles.plus}>+</span>
-          <img src="/images/flavor4.png" alt="Flavor 4" />
+          <img src="/images/promotion/myflavor1.png" alt="myflavor 1" />
         </div>
         <div className={styles.flavorText}>
           내맘대로 추천하는{" "}
@@ -63,33 +69,46 @@ export default function FlavorList() {
         <button className={styles.tagButton}>특이한 맛들을 모아서</button>
       </div>
 
+      {/* 인기 플레이버 */}
       <div className={styles.popularFlavorsWrapper}>
-        <div className={styles.label}>인기 플레이버</div>
-        <div className={styles.flavorList}>
-          {popularFlavors.map(({ id, name, img }) => (
-            <div key={id} className={styles.flavorItem}>
-              <img src={img} alt={name} />
-              <div className={styles.flavorName}>{name}</div>
-            </div>
-          ))}
+        <div className={styles.popularFlavorsInner}>
+          <div className={styles.label}>인기 플레이버</div>
+          <div className={styles.flavorList}>
+            {popularFlavors.map(({ id, name, img }) => (
+              <div
+                key={id}
+                className={`${styles.flavorItem} ${
+                  selectedFlavors.has(id) ? styles.selected : ""
+                }`}
+                onClick={() => handleFlavorClick(id)}
+              >
+                <img src={img} alt={name} />
+                <div className={styles.flavorName}>{name}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
+      {/* 사이즈 선택 */}
       <div className={styles.sizeSelectorWrapper}>
-        <div className={styles.label}>사이즈</div>
-        <div className={styles.sizeButtons}>
-          {sizes.map(({ id, label }) => (
-            <button
-              key={id}
-              className={`${styles.sizeButton} ${
-                selectedSize === id ? styles.active : ""
-              }`}
-              onClick={() => handleSizeClick(id)}
-            >
-              {label}
-            </button>
-          ))}
+        <div className={styles.sizeLeft}>
+          <div className={styles.label}>사이즈</div>
+          <div className={styles.sizeButtons}>
+            {sizes.map(({ id, label }) => (
+              <button
+                key={id}
+                className={`${styles.sizeButton} ${
+                  selectedSizes.has(id) ? styles.active : ""
+                }`}
+                onClick={() => handleSizeClick(id)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
         </div>
+
         <button className={styles.resetButton} onClick={handleReset}>
           선택초기화
         </button>
@@ -98,8 +117,11 @@ export default function FlavorList() {
       <hr className={styles.separator} />
 
       <div className={styles.summary}>
-        총 <span className={styles.highlight}>{selectedSize || 0}</span>개의
-        플레이버 리스트가 있습니다.
+        총{" "}
+        <span className={styles.highlight}>{selectedFlavors.size}</span>개의
+        플레이버와{" "}
+        <span className={styles.highlight}>{selectedSizes.size}</span>개의
+        사이즈가 선택되었습니다.
       </div>
     </div>
   );
