@@ -57,7 +57,7 @@
 
     <img src="https://github.com/user-attachments/assets/ab4b005f-6734-4102-a9d1-54807dfa5b0b" width="50%" height="50%" />
 
-    ## **5. Delivery/Store **
+    ## **5. Delivery/Store**
 
     <img src="https://github.com/user-attachments/assets/37256745-0838-4e21-82de-4d03369f95d6" width="50%" height="50%" />
 
@@ -74,29 +74,6 @@
 - **```BRPlay``` -  박창준**
 - **```BRStory``` - 조석근**
 - **```Delivery/Store``` - 이지용**
----
-
-# 🍦 기술 스택 및 사용 툴
-### 🧑‍💻 사용 언어 및 프레임워크
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-
-
-### 📦 라이브러리 & API
-![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
-![KakaoMap](https://img.shields.io/badge/KakaoMap-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black)
-
-
-### 🔧 개발 도구
-![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-
-
-### 🔄 버전 관리
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 # 🍦 **프로젝트 목표**
@@ -245,6 +222,31 @@
 ## 🎲 **4-2 개선 사항**
 
 •  각 페이지 별 애니메이션 및 상호 작용 기능 보충
+
+---
+
+
+# 🍦 기술 스택 및 사용 툴
+### 🧑‍💻 사용 언어 및 프레임워크
+![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+
+
+### 📦 라이브러리 & API
+![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white)
+![KakaoMap](https://img.shields.io/badge/KakaoMap-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=black)
+
+
+### 🔧 개발 도구
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+
+### 🔄 버전 관리
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
